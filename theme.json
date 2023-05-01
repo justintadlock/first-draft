@@ -1,0 +1,257 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+        "version": 2,
+        "settings": {
+                "border": {
+                        "color": true,
+                        "radius": true,
+                        "style": true,
+                        "width": true
+                },
+                "color": {
+                        "custom": true,
+                        "defaultGradients": true,
+                        "defaultPalette": false,
+                        "link": true,
+                        "gradients": [],
+                        "palette": [
+                                {
+                                        "slug": "transparent",
+                                        "color": "transparent",
+                                        "name": "Transparent"
+                                },
+                                {
+                                        "slug": "black",
+                                        "color": "#000000",
+                                        "name": "Black"
+                                },
+                                {
+                                        "slug": "white",
+                                        "color": "#ffffff",
+                                        "name": "White"
+                                },
+                                {
+                                        "slug": "neutral-900",
+                                        "color": "#1a202c",
+                                        "name": "Neutral: 900"
+                                },
+                                {
+                                        "slug": "neutral-800",
+                                        "color": "#2d3748",
+                                        "name": "Neutral: 800"
+                                },
+                                {
+                                        "slug": "neutral-700",
+                                        "color": "#4a5568",
+                                        "name": "Neutral: 700"
+                                },
+                                {
+                                        "slug": "neutral-600",
+                                        "color": "#718096",
+                                        "name": "Neutral: 600"
+                                },
+                                {
+                                        "slug": "neutral-500",
+                                        "color": "#a0aec0",
+                                        "name": "Neutral: 500"
+                                },
+                                {
+                                        "slug": "neutral-400",
+                                        "color": "#cbd5e0",
+                                        "name": "Neutral: 400"
+                                },
+                                {
+                                        "slug": "neutral-300",
+                                        "color": "#e2e8f0",
+                                        "name": "Neutral: 300"
+                                },
+                                {
+                                        "slug": "neutral-200",
+                                        "color": "#edf2f7",
+                                        "name": "Neutral: 200"
+                                },
+                                {
+                                        "slug": "neutral-100",
+                                        "color": "#f7fafc",
+                                        "name": "Neutral: 100"
+                                },
+                                {
+                                        "slug": "primary-900",
+                                        "color": "#2a4365",
+                                        "name": "Primary: 900"
+                                },
+                                {
+                                        "slug": "primary-800",
+                                        "color": "#2c5282",
+                                        "name": "Primary: 800"
+                                },
+                                {
+                                        "slug": "primary-700",
+                                        "color": "#2b6cb0",
+                                        "name": "Primary: 700"
+                                },
+                                {
+                                        "slug": "primary-600",
+                                        "color": "#3182ce",
+                                        "name": "Primary: 600"
+                                },
+                                {
+                                        "slug": "primary-500",
+                                        "color": "#4299e1",
+                                        "name": "Primary: 500"
+                                },
+                                {
+                                        "slug": "primary-400",
+                                        "color": "#63b3ed",
+                                        "name": "Primary: 400"
+                                },
+                                {
+                                        "slug": "primary-300",
+                                        "color": "#90cdf4",
+                                        "name": "Primary: 300"
+                                },
+                                {
+                                        "slug": "primary-200",
+                                        "color": "#bee3f8",
+                                        "name": "Primary: 200"
+                                },
+                                {
+                                        "slug": "primary-100",
+                                        "color": "#ebf8ff",
+                                        "name": "Primary: 100"
+                                }
+                        ]
+                },
+                "layout": {
+                        "contentSize": "38rem",
+                        "wideSize": "64rem"
+                },
+                "spacing": {
+                        "blockGap": true,
+                        "margin": true,
+                        "padding": true,
+                        "units": [
+                                "rem",
+                                "em",
+                                "%",
+                                "vh",
+                                "vw",
+                                "px"
+                        ]
+                },
+                "typography": {
+                        "customFontSize": false,
+                        "dropCap": true,
+                        "fontStyle": true,
+                        "fontWeight": true,
+                        "letterSpacing": true,
+                        "lineHeight": false,
+                        "textDecoration": true,
+                        "textTransform": true,
+                        "fontFamilies": [
+                                {
+                                        "fontFamily": "\"Montserrat\", sans-serif",
+                                        "slug": "headings",
+                                        "name": "Headings"
+                                },
+                                {
+                                        "fontFamily": "\"Cabin\", sans-serif",
+                                        "slug": "primary",
+                                        "name": "Primary"
+                                },
+                                {
+                                        "fontFamily": "var( --wp--preset--font-family--primary )",
+                                        "slug": "secondary",
+                                        "name": "Secondary"
+                                },
+                                {
+                                        "fontFamily": "\"Source Code Pro\", Monaco, Consolas, \"Andale Mono WT\", \"Andale Mono\", \"Lucida Console\", \"Lucida Sans Typewriter\", \"DejaVu Sans Mono\", \"Bitstream Vera Sans Mono\", \"Liberation Mono\", \"Nimbus Mono L\", \"Courier New\", Courier, monospace",
+                                        "slug": "mono",
+                                        "name": "Monospace"
+                                }
+                        ],
+                        "fontSizes": [
+                                {
+                                        "slug": "xs",
+                                        "size": "0.875rem",
+                                        "name": "XS"
+                                },
+                                {
+                                        "slug": "sm",
+                                        "size": "0.9375rem",
+                                        "name": "Small"
+                                },
+                                {
+                                        "slug": "base",
+                                        "size": "1rem",
+                                        "name": "Base"
+                                },
+                                {
+                                        "slug": "lg",
+                                        "size": "1.125rem",
+                                        "name": "Large"
+                                },
+                                {
+                                        "slug": "xl",
+                                        "size": "1.25rem",
+                                        "name": "XL"
+                                },
+                                {
+                                        "slug": "2-xl",
+                                        "size": "1.5rem",
+                                        "name": "2XL"
+                                },
+                                {
+                                        "slug": "3-xl",
+                                        "size": "1.875rem",
+                                        "name": "3XL"
+                                },
+                                {
+                                        "slug": "4-xl",
+                                        "size": "2.25rem",
+                                        "name": "4XL"
+                                },
+                                {
+                                        "slug": "5-xl",
+                                        "size": "3rem",
+                                        "name": "5XL"
+                                },
+                                {
+                                        "slug": "6-xl",
+                                        "size": "4rem",
+                                        "name": "6XL"
+                                },
+                                {
+                                        "slug": "7-xl",
+                                        "size": "4.5rem",
+                                        "name": "7XL"
+                                },
+                                {
+                                        "slug": "8-xl",
+                                        "size": "6rem",
+                                        "name": "8XL"
+                                },
+                                {
+                                        "slug": "9-xl",
+                                        "size": "8rem",
+                                        "name": "9XL"
+                                }
+                        ]
+                }
+        },
+        "styles": {
+                "color": {
+                        "text": "var( --wp--preset--color--neutral-900 )",
+                        "background": "var( --wp--preset--color--white )"
+                },
+                "typography": {
+                        "fontFamily": "var( --wp--preset--font-family--primary )",
+                        "fontSize": "var( --wp--preset--font-size--lg )",
+                        "lineHeight": "var( --wp--custom--line-height--lg )"
+                },
+                "spacing": {
+                        "blockGap": "var( --wp--custom--spacing--global )",
+                        "padding": "var( --wp--custom--spacing--0 )"
+                }
+        }
+}

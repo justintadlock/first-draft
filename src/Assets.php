@@ -1,4 +1,13 @@
 <?php
+/**
+ * The Assets class is responsible for registering and/or enqueuing the theme's
+ * CSS and JavaScript.
+ *
+ * @author    Your Name <youremail@domain.tld>
+ * @copyright Copyright (c) 2023, Your Name
+ * @link      https://yourwebsite.tld
+ * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ */
 
 namespace FirstDraft;
 
@@ -28,6 +37,7 @@ class Assets
 	 * Add editor stylesheets.
 	 *
 	 * @since 1.0.0
+	 * @link  https://developer.wordpress.org/reference/functions/add_editor_style/
 	 */
         public function addEditorStyles(): void
 	{
@@ -54,10 +64,12 @@ class Assets
 
 	/**
          * Enqueues block-specific styles so that they only load when the block
-         * is in use. Block styles are stored under `/assets/css/blocks`, and
-	 * each file is named `{$block_namespace}-{$block_slug}.css`.
+         * is in use. Block styles are stored under `/assets/css/blocks` are
+	 * automatically enqueued. Each file should be named
+	 * `{$block_namespace}-{$block_slug}.css`.
          *
          * @since 1.0.0
+	 * @link  https://developer.wordpress.org/reference/functions/wp_enqueue_block_style/
          */
         public function enqueueBlockStyles(): void
 	{
@@ -72,10 +84,18 @@ class Assets
                                 '.css'
                         ], '', $file );
 
+			// Get the position of the first hyphen.
+			$pos = strpos( $name, '-' );
+
+			// Bail if there is no hyphen.
+			if ( false === $pos ) {
+				continue;
+			}
+
 			// Converts the filename to its associated block name by
 			// replacing the first `-` with a `/`. Filenames must
 			// use `{namespace}-{slug}` for this to work.
-                        $block = str_replace( '-', '/', $name, 1 );
+			$block = substr_replace( $name, '/', $pos, 1 );
 
 			// Register the block style.
                         wp_enqueue_block_style( $block, [

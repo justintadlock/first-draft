@@ -14,3 +14,34 @@
  * License:           GNU General Public License v2.0 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  */
+
+/**
+ * WP has no way to tie a line-height to a font-size. This code combines line
+ * heights that are set via `settings.custom.lineHeight` in `theme.json` with
+ * its related font-size.
+ */
+.has-5-xl-font-size { line-height: var( --wp--custom--line-height--5-xl ); }
+.has-4-xl-font-size { line-height: var( --wp--custom--line-height--4-xl ); }
+.has-3-xl-font-size { line-height: var( --wp--custom--line-height--3-xl ); }
+.has-2-xl-font-size { line-height: var( --wp--custom--line-height--2-xl ); }
+.has-xl-font-size   { line-height: var( --wp--custom--line-height--xl ); }
+.has-lg-font-size   { line-height: var( --wp--custom--line-height--lg ); }
+.has-base-font-size { line-height: var( --wp--custom--line-height--base ); }
+.has-sm-font-size   { line-height: var( --wp--custom--line-height--sm ); }
+.has-xs-font-size   { line-height: var( --wp--custom--line-height--xs ); }
+
+/**
+ * WP doesn't yet support contextual spacing for headings and other elements, so
+ * this is necessary to handle via CSS.
+ *
+ * @link https://developer.wordpress.org/news/2023/03/everything-you-need-to-know-about-spacing-in-block-themes/#contextual-spacing-for-headings
+ */
+.is-layout-flow * + :is( h1, h2, h3, h4, h5, h6 ),
+.wp-block-post-content * + :is( h1, h2, h3, h4, h5, h6 )  {
+	margin-top: var( --wp--preset--spacing--120 );
+}
+
+.is-layout-flow :is( h1, h2, h3, h4, h5, h6 ) + *,
+.wp-block-post-content :is( h1, h2, h3, h4, h5, h6 ) + * {
+	margin-top: var( --wp--preset--spacing--40 );
+}

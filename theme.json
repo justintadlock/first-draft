@@ -11,9 +11,9 @@
                 "color": {
                         "custom": true,
                         "defaultGradients": true,
-                        "defaultPalette": false,
-                        "link": true,
+                        "defaultPalette": true,
                         "gradients": [],
+                        "link": true,
                         "palette": [
                                 {
                                         "slug": "transparent",
@@ -122,14 +122,105 @@
                                 }
                         ]
                 },
+		"custom": {
+			"lineHeight": {
+				"xs": "1.25rem",
+				"sm": "1.5rem",
+				"base": "1.5rem",
+				"lg": "clamp( 1.75rem, 2.1875vw + 1.00625rem, 1.96875rem )",
+				"xl": "1.75",
+				"2-xl": "clamp( 2.1875rem, -1.875vw + 2.825rem, 2rem )",
+				"3-xl": "clamp( 2rem,2.5vw + 1.15rem, 2.25rem )",
+				"4-xl": "clamp( 2.125rem, 4.0625vw + 0.74375rem, 2.53125rem )",
+				"5-xl": "clamp( 2.25rem, 5.55556vw + 0.36111rem, 3.25rem )"
+			}
+		},
                 "layout": {
-                        "contentSize": "38rem",
+                        "contentSize": "40rem",
                         "wideSize": "64rem"
                 },
                 "spacing": {
                         "blockGap": true,
+			"customSpacingSize": true,
                         "margin": true,
                         "padding": true,
+			"spacingSizes": [
+				{
+					"name": "Pixel - Fixed (1px)",
+					"size": "1px",
+					"slug": "px"
+				},
+				{
+					"name": "Step 1 - Fixed (0.25rem)",
+					"size": "0.25rem",
+					"slug": "10"
+				},
+				{
+					"name": "Step 2 - Fixed (0.5rem)",
+					"size": "0.5rem",
+					"slug": "20"
+				},
+				{
+					"name": "Step 3 - Fixed (0.75rem)",
+					"size": "0.75rem",
+					"slug": "30"
+				},
+				{
+					"name": "Step 4 - Fixed (1rem)",
+					"size": "1rem",
+					"slug": "40"
+				},
+				{
+					"name": "Step 5 - Fixed (1.25rem)",
+					"size": "1.25rem",
+					"slug": "50"
+				},
+				{
+					"name": "Step 6 - Fixed (1.5rem)",
+					"size": "1.5rem",
+					"slug": "60"
+				},
+				{
+					"name": "Step 7 - Fixed (1.75rem)",
+					"size": "1.75rem",
+					"slug": "70"
+				},
+				{
+					"name": "Step 8 - Fixed (2rem)",
+					"size": "2rem",
+					"slug": "80"
+				},
+				{
+					"name": "Step 9 - Fluid (2.25rem)",
+					"size": "clamp(2rem, calc(2rem + ((1vw - 0.4rem) * 1.0417)), 2.25rem)",
+					"slug": "90"
+				},
+				{
+					"name": "Step 10 - Fluid (2.5rem)",
+					"size": "clamp(2rem, calc(2rem + ((1vw - 0.4rem) * 2.0833)), 2.5rem)",
+					"slug": "100"
+				},
+				{
+					"name": "Step 12 - Fluid (3rem)",
+					"size": "clamp(2rem, calc(2rem + ((1vw - 0.4rem) * 4.1667)), 3rem)",
+					"slug": "120"
+				},
+				{
+					"name": "Step 16 - Fluid (4rem)",
+					"size": "clamp(2rem, calc(2rem + ((1vw - 0.4rem) * 8.3333)), 4rem)",
+					"slug": "160"
+				},
+				{
+					"name": "Step 24 - Fluid (6rem)",
+					"size": "clamp(4rem, calc(4rem + ((1vw - 0.4rem) * 8.3333)), 6rem)",
+					"slug": "240"
+				},
+				{
+					"name": "Step 32 - Fluid (8rem)",
+					"size": "clamp(4rem, calc(4rem + ((1vw - 0.4rem) * 16.6667)), 8rem)",
+					"slug": "320"
+				}
+			],
                         "units": [
                                 "rem",
                                 "em",
@@ -138,29 +229,40 @@
                                 "vw",
                                 "px"
                         ]
+
                 },
                 "typography": {
                         "customFontSize": false,
                         "dropCap": true,
-                        "fontStyle": true,
-                        "fontWeight": true,
-                        "letterSpacing": true,
-                        "lineHeight": false,
-                        "textDecoration": true,
-                        "textTransform": true,
                         "fontFamilies": [
                                 {
-                                        "fontFamily": "\"Montserrat\", sans-serif",
+                                        "fontFamily": "inherit",
                                         "slug": "headings",
                                         "name": "Headings"
                                 },
                                 {
-                                        "fontFamily": "\"Cabin\", sans-serif",
+                                        "fontFamily": "Karla, sans-serif",
                                         "slug": "primary",
-                                        "name": "Primary"
+                                        "name": "Primary",
+					"fontFace": [
+						{
+							"fontFamily": "Karla",
+							"fontWeight": "400 700",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/karla/karla.woff2" ]
+						},
+						{
+							"fontFamily": "Karla",
+							"fontWeight": "400 700",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/karla/karla-italic.woff2" ]
+						}
+					]
                                 },
                                 {
-                                        "fontFamily": "var( --wp--preset--font-family--primary )",
+                                        "fontFamily": "Lora, Georgia, serif",
                                         "slug": "secondary",
                                         "name": "Secondary"
                                 },
@@ -170,74 +272,61 @@
                                         "name": "Monospace"
                                 }
                         ],
-                        "fontSizes": [
-                                {
-                                        "slug": "xs",
-                                        "size": "0.875rem",
-                                        "name": "XS"
-                                },
-                                {
-                                        "slug": "sm",
-                                        "size": "0.9375rem",
-                                        "name": "Small"
-                                },
-                                {
-                                        "slug": "base",
-                                        "size": "1rem",
-                                        "name": "Base"
-                                },
-                                {
-                                        "slug": "lg",
-                                        "size": "1.125rem",
-                                        "name": "Large"
-                                },
-                                {
-                                        "slug": "xl",
-                                        "size": "1.25rem",
-                                        "name": "XL"
-                                },
-                                {
-                                        "slug": "2-xl",
-                                        "size": "1.5rem",
-                                        "name": "2XL"
-                                },
-                                {
-                                        "slug": "3-xl",
-                                        "size": "1.875rem",
-                                        "name": "3XL"
-                                },
-                                {
-                                        "slug": "4-xl",
-                                        "size": "2.25rem",
-                                        "name": "4XL"
-                                },
-                                {
-                                        "slug": "5-xl",
-                                        "size": "3rem",
-                                        "name": "5XL"
-                                },
-                                {
-                                        "slug": "6-xl",
-                                        "size": "4rem",
-                                        "name": "6XL"
-                                },
-                                {
-                                        "slug": "7-xl",
-                                        "size": "4.5rem",
-                                        "name": "7XL"
-                                },
-                                {
-                                        "slug": "8-xl",
-                                        "size": "6rem",
-                                        "name": "8XL"
-                                },
-                                {
-                                        "slug": "9-xl",
-                                        "size": "8rem",
-                                        "name": "9XL"
-                                }
-                        ]
-                }
+			"fontSizes": [
+				{
+					"name": "XS",
+					"size": "0.875rem",
+					"slug": "xs"
+				},
+				{
+					"name": "Small",
+					"size": "0.9375rem",
+					"slug": "sm"
+				},
+				{
+					"name": "Medium (Base)",
+					"size": "1rem",
+					"slug": "base"
+				},
+				{
+					"name": "Large",
+					"size": "clamp( 1.0625rem, 0.625vw + 0.85rem, 1.125rem )",
+					"slug": "lg"
+				},
+				{
+					"name": "XL",
+					"size": "clamp( 1.125rem, 1.25vw + 0.7rem, 1.25rem )",
+					"slug": "xl"
+				},
+				{
+					"name": "2XL",
+					"size": "clamp( 1.25rem, 2.5vw + 0.4rem, 1.5rem )",
+					"slug": "2-xl"
+				},
+				{
+					"name": "3XL",
+					"size": "clamp( 1.5rem, 3.75vw + 0.225rem, 1.875rem )",
+					"slug": "3-xl"
+				},
+				{
+					"name": "4XL",
+					"size": "clamp( 1.75rem, 5vw + 0.05rem, 2.25rem )",
+					"slug": "4-xl"
+				},
+				{
+					"name": "5XL",
+					"size": "clamp( 2rem, 5.55556vw + 0.11111rem, 3rem )",
+					"slug": "5-xl"
+				}
+			],
+                        "fontStyle": true,
+                        "fontWeight": true,
+                        "letterSpacing": true,
+                        "lineHeight": false,
+                        "textDecoration": true,
+                        "textTransform": true
+                },
+		"useRootPaddingAwareAlignments": true
         },
         "styles": {
                 "color": {
@@ -246,12 +335,130 @@
                 },
                 "typography": {
                         "fontFamily": "var( --wp--preset--font-family--primary )",
-                        "fontSize": "var( --wp--preset--font-size--lg )",
-                        "lineHeight": "var( --wp--custom--line-height--lg )"
+                        "fontSize": "var( --wp--preset--font-size--xl )",
+                        "lineHeight": "var( --wp--custom--line-height--xl )"
                 },
                 "spacing": {
-                        "blockGap": "var( --wp--custom--spacing--global )",
-                        "padding": "var( --wp--custom--spacing--0 )"
-                }
-        }
+                        "blockGap": "2rem",
+                        "padding": {
+				"top": "0",
+				"bottom": "0",
+				"left": "2rem",
+				"right": "2rem"
+			}
+                },
+		"blocks": {
+			"core/navigation": {
+				"elements": {
+					"link": {
+						":focus": {
+							"typography": {
+								"textDecoration": "underline"
+							}
+						},
+						":hover": {
+							"typography": {
+								"textDecoration": "underline"
+							}
+						},
+						"typography": {
+							"textDecoration": "none"
+						}
+					}
+				}
+			},
+			"core/post-title": {
+				"elements": {
+					"link": {
+						"typography": {
+							"textDecoration": "none"
+						},
+						":focus": {
+							"typography": {
+								"textDecoration": "underline"
+							}
+						},
+						":hover": {
+							"typography": {
+								"textDecoration": "underline"
+							}
+						}
+					}
+				}
+			}
+		},
+                "elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var( --wp--preset--font-family--headings )",
+					"fontWeight": "400"
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontSize": "var( --wp--preset--font-size--5-xl )",
+					"lineHeight": "var( --wp--custom--line-height--5-xl )"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontSize": "var( --wp--preset--font-size--4-xl )",
+					"lineHeight": "var( --wp--custom--line-height--4-xl )"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontSize": "var( --wp--preset--font-size--3-xl )",
+					"lineHeight": "var( --wp--custom--line-height--3-xl )"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontSize": "var( --wp--preset--font-size--2-xl )",
+					"lineHeight": "var( --wp--custom--line-height--2-xl )"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontSize": "var( --wp--preset--font-size--xl )",
+					"lineHeight": "var( --wp--custom--line-height--xl )",
+					"textTransform": "uppercase"
+				}
+			},
+			"h6": {
+				"typography": {
+					"fontSize": "var( --wp--preset--font-size--lg )",
+					"lineHeight": "var( --wp--custom--line-height--lg )",
+					"textTransform": "uppercase"
+				}
+			},
+                        "link": {
+                                "color": {
+                                        "text": "var( --wp--preset--color--primary-600 )"
+                                },
+				":focus": {
+					"color": {
+						"text": "var( --wp--preset--color--primary-800 )"
+					}
+				},
+				":hover": {
+					"color": {
+						"text": "var( --wp--preset--color--primary-800 )"
+					}
+				}
+                        }
+		}
+        },
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "Header"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Footer"
+		}
+	]
 }

@@ -52,3 +52,7 @@
 .wp-element-caption {
 	text-align: center;
 }
+
+cite::before {
+	content: "\2013\00a0"
+}

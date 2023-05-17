@@ -2,6 +2,6 @@
 .wp-block-image.is-style-hand-drawn img {
 	border: 2px solid currentColor;
 	overflow: hidden;
-	box-shadow: var( --wp--custom--shadow--md );
+	box-shadow: var( --wp--preset--shadow--md );
 	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px !important;
 }

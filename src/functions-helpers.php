@@ -15,7 +15,7 @@ namespace FirstDraft;
  * theme on first call by executing each component's `boot()` method. The
  * `theme()` function acts as the single instance of the theme, and devs can
  * access any class/component by passing in its reference via the `$abstract`
- * parameter (useful for access hooks within classes).
+ * parameter (useful for accessing hooks within classes).
  *
  * @since  1.0.0
  * @return mixed

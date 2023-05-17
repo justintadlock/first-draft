@@ -45,3 +45,10 @@
 .wp-block-post-content :is( h1, h2, h3, h4, h5, h6 ) + * {
 	margin-top: var( --wp--preset--spacing--40 );
 }
+
+/**
+ * WP doesn't yet have text-align support or element CSS support in `theme.json`.
+ */
+.wp-element-caption {
+	text-align: center;
+}

@@ -139,6 +139,25 @@
                         "contentSize": "40rem",
                         "wideSize": "64rem"
                 },
+		"shadow": {
+			"presets": [
+				{
+					"name": "Small",
+					"slug": "sm",
+					"shadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)"
+				},
+				{
+					"name": "Medium",
+					"slug": "md",
+					"shadow": "0 4px  10px 0 rgba( 0, 0, 0, 0.3 )"
+				},
+				{
+					"name": "Large",
+					"slug": "lg",
+					"shadow": "0 8px  15px 0 rgba( 0, 0, 0, 0.3 )"
+				}
+			]
+		},
                 "spacing": {
                         "blockGap": true,
 			"customSpacingSize": true,
@@ -348,6 +367,26 @@
 			}
                 },
 		"blocks": {
+			"core/button": {
+				"variations": {
+					"outline": {
+						"spacing": {
+							"padding": {
+								"top": "var( --wp--preset--spacing--20 )",
+								"bottom": "var( --wp--preset--spacing--20 )",
+								"left": "var( --wp--preset--spacing--60 )",
+								"right": "var( --wp--preset--spacing--60 )"
+							}
+						}
+					}
+				}
+			},
+			"core/image": {
+				"css": "& img { box-shadow: var( --wp--preset--shadow--sm ); }"
+			},
+			"core/post-featured-image": {
+				"css": "& img { box-shadow: var( --wp--preset--shadow--sm ); }"
+			},
 			"core/navigation": {
 				"elements": {
 					"link": {
@@ -385,9 +424,73 @@
 						}
 					}
 				}
+			},
+			"core/site-title": {
+				"elements": {
+					"link": {
+						"typography": {
+							"textDecoration": "none"
+						},
+						":focus": {
+							"typography": {
+								"textDecoration": "underline"
+							}
+						},
+						":hover": {
+							"typography": {
+								"textDecoration": "underline"
+							}
+						}
+					}
+				}
 			}
 		},
                 "elements": {
+			"button": {
+				":focus": {
+					"color": {
+						"background": "var( --wp--preset--color--primary-800 )"
+					},
+					"typography": {
+						"textDecoration": "underline"
+					}
+				},
+				":hover": {
+					"color": {
+						"background": "var( --wp--preset--color--primary-800 )"
+					},
+					"typography": {
+						"textDecoration": "underline"
+					}
+				},
+				"border": {
+					"radius": "0"
+				},
+				"color": {
+					"background": "var( --wp--preset--color--primary-500 )",
+					"text": "var( --wp--preset--color--white )"
+				},
+				"spacing": {
+					"padding": {
+						"top": "var( --wp--preset--spacing--20 )",
+						"bottom": "var( --wp--preset--spacing--20 )",
+						"left": "var( --wp--preset--spacing--60 )",
+						"right": "var( --wp--preset--spacing--60 )"
+					}
+				},
+				"typography": {
+					"fontSize": "var( --wp--preset--font-size--lg )",
+					"lineHeight": "var( --wp--custom--line-height--lg )"
+				}
+			},
+			"caption": {
+				"color": {
+					"text": "var( --wp--preset--color--neutral-700 )"
+				},
+				"typography": {
+					"fontSize": "var( --wp--preset--font-size--lg )"
+				}
+			},
 			"heading": {
 				"typography": {
 					"fontFamily": "var( --wp--preset--font-family--headings )",
@@ -459,6 +562,11 @@
 			"area": "footer",
 			"name": "footer",
 			"title": "Footer"
+		},
+		{
+			"area": "uncategorized",
+			"name": "comments",
+			"title": "Comments"
 		}
 	]
 }

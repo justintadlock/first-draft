@@ -36,12 +36,10 @@
  *
  * @link https://developer.wordpress.org/news/2023/03/everything-you-need-to-know-about-spacing-in-block-themes/#contextual-spacing-for-headings
  */
-.is-layout-flow * + :is( h1, h2, h3, h4, h5, h6 ),
 .wp-block-post-content * + :is( h1, h2, h3, h4, h5, h6 )  {
 	margin-top: var( --wp--preset--spacing--120 );
 }
 
-.is-layout-flow :is( h1, h2, h3, h4, h5, h6 ) + *,
 .wp-block-post-content :is( h1, h2, h3, h4, h5, h6 ) + * {
 	margin-top: var( --wp--preset--spacing--40 );
 }

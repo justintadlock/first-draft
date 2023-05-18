@@ -1,25 +1,32 @@
 <!-- wp:template-part {"slug":"header","theme":"first-draft","tagName":"header"} /-->
 
 <!-- wp:group {"tagName":"main","layout":{"type":"default"}} -->
-<main class="wp-block-group"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
-	<div class="wp-block-group alignwide"><!-- wp:post-date {"textColor":"neutral-700","fontSize":"lg"} /-->
-
-	<!-- wp:post-title {"level":1} /--></div>
+<main class="wp-block-group">
+	<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
+	<div class="wp-block-group alignwide">
+		<!-- wp:post-date /-->
+		<!-- wp:post-title {"level":1} /-->
+	</div>
 	<!-- /wp:group -->
 
 	<!-- wp:post-content {"layout":{"type":"constrained"}} /-->
 
 	<!-- wp:group {"layout":{"type":"constrained"}} -->
-	<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-	<div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}}} -->
-	<p style="font-style:normal;font-weight:700">Topics:</p>
-	<!-- /wp:paragraph -->
+	<div class="wp-block-group">
+		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+		<div class="wp-block-group">
+			<!-- wp:paragraph -->
+			<p>Topics:</p>
+			<!-- /wp:paragraph -->
 
-	<!-- wp:post-terms {"term":"category","style":{"typography":{"fontStyle":"italic","fontWeight":"400"}}} /--></div>
-	<!-- /wp:group --></div>
+			<!-- wp:post-terms {"term":"category"} /-->
+		</div>
+		<!-- /wp:group -->
+	</div>
 	<!-- /wp:group -->
 
-	<!-- wp:template-part {"slug":"comments","theme":"first-draft","tagName":"section"} /--></main>
-	<!-- /wp:group -->
+	<!-- wp:template-part {"slug":"comments","theme":"first-draft","tagName":"section"} /-->
+</main>
+<!-- /wp:group -->
 
-	<!-- wp:template-part {"slug":"footer","theme":"first-draft","tagName":"footer"} /-->
+<!-- wp:template-part {"slug":"footer","theme":"first-draft","tagName":"footer"} /-->

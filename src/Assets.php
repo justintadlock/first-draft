@@ -101,7 +101,8 @@ class Assets
                         wp_enqueue_block_style( $block, [
                                 'handle' => "first-draft-block-{$name}",
 				'src'    => get_parent_theme_file_uri( "assets/css/blocks/{$name}.css" ),
-                                'path'   => get_parent_theme_file_path( "assets/css/blocks/{$name}.css" )
+                                'path'   => get_parent_theme_file_path( "assets/css/blocks/{$name}.css" ),
+				'ver'    => filemtime( get_parent_theme_file_path( "assets/css/blocks/{$name}.css" ) )
                         ] );
                 }
         }

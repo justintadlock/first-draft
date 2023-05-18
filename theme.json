@@ -465,6 +465,12 @@
 				}
 			},
 			"core/site-title": {
+				"typography": {
+					"fontSize": "var( --wp--preset--font-size--xl )",
+					"fontStyle": "normal",
+					"fontWeight": "700",
+					"textTransform": "uppercase"
+				},
 				"elements": {
 					"link": {
 						"typography": {

@@ -1,0 +1,16 @@
+.wp-block-details summary {
+	display: flex;
+	justify-content: space-between;
+}
+
+.wp-block-details summary::marker {
+	content: "";
+}
+
+.wp-block-details summary::after {
+	content: "+";
+}
+
+.wp-block-details[open] summary:after {
+	content: "-";
+}

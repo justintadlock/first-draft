@@ -396,6 +396,21 @@
 					"lineHeight": "var( --wp--preset--line-height--md )"
 				}
 			},
+			"core/details": {
+				"border": {
+					"color": "var( --wp--preset--color--neutral-400 )",
+					"style": "solid",
+					"width": "1px"
+				},
+				"spacing": {
+					"padding": {
+						"top": "var( --wp--preset--spacing--40 )",
+						"bottom": "var( --wp--preset--spacing--40 )",
+						"left": "var( --wp--preset--spacing--40 )",
+						"right": "var( --wp--preset--spacing--40 )"
+					}
+				}
+			},
 			"core/file": {
 				"border": {
 					"color": "var( --wp--preset--color--neutral-400 )",

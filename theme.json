@@ -546,6 +546,16 @@
 				"css": "& img { box-shadow: var( --wp--preset--shadow--sm ); }"
 			},
 			"core/navigation": {
+				"color": {
+					"text": "var( --wp--preset--color--neutral-700 )"
+				},
+				"spacing": {
+					"blockGap": "var( --wp--preset--spacing--60 )"
+				},
+				"typography": {
+					"fontSize": "var( --wp--preset--font-size--lg )",
+					"lineHeight": "var( --wp--custom--line-height--lg )"
+				},
 				"elements": {
 					"link": {
 						":focus": {

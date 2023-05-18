@@ -461,6 +461,12 @@
 					"lineHeight": "var( --wp--custom--line-height--2-xl )"
 				}
 			},
+			"core/preformatted": {
+				"typography": {
+					"fontSize": "var( --wp--preset--font-size--lg )",
+					"lineHeight": "var( --wp--custom--line-height--lg )"
+				}
+			},
 			"core/quote": {
 				"border": {
 					"left": {

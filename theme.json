@@ -685,6 +685,11 @@
 					}
 				}
 			},
+			"core/social-links": {
+				"spacing": {
+					"blockGap": "var( --wp--preset--spacing--40 )"
+				}
+			},
 			"core/table": {
 				"border": {
 					"color": "var( --wp--preset--color--neutral-400 )"

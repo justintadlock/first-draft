@@ -9,7 +9,7 @@
 	text-align: left;
 }
 
-/* Consistent bold for headers. */
+/* Fixes inconsistent default bolding for `thead` and `tfoot`. */
 .wp-block-table thead,
 .wp-block-table tfoot {
 	font-weight: 700;

@@ -12,7 +12,7 @@
                         "custom": true,
                         "defaultGradients": true,
                         "defaultPalette": true,
-                        "gradients": [],
+			"gradients": [],
                         "link": true,
                         "palette": [
                                 {

@@ -33,7 +33,7 @@
 <div class="wp-block-group alignwide"><!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/9"} /-->
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide"><!-- wp:post-title {"isLink":true,"style":{"elements":{"link":{"color":{"text":"var:preset|color|neutral-900"},":hover":{"color":{"text":"var:preset|color|primary-800"}}}}}} /-->
+<div class="wp-block-group alignwide"><!-- wp:post-title {"isLink":true} /-->
 
 <!-- wp:post-date {"textColor":"neutral-700","fontSize":"lg"} /--></div>
 <!-- /wp:group -->

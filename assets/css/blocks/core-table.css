@@ -21,7 +21,7 @@
  */
 .wp-block-table thead,
 .wp-block-table tfoot,
-.wp-block-table th,
-.wp-block-table td {
+.wp-block-table tr th,
+.wp-block-table tr td {
 	border-color: inherit;
 }

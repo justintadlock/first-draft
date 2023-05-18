@@ -397,6 +397,21 @@
 				},
 				"css": "& code {\n\toverflow: auto;\n\tword-wrap: normal;\n\twhite-space: revert;\n}"
 			},
+			"core/file": {
+				"border": {
+					"color": "var( --wp--preset--color--neutral-400 )",
+					"style": "solid",
+					"width": "1px"
+				},
+				"spacing": {
+					"padding": {
+						"top": "var( --wp--preset--spacing--80 )",
+						"bottom": "var( --wp--preset--spacing--80 )",
+						"left": "var( --wp--preset--spacing--80 )",
+						"right": "var( --wp--preset--spacing--80 )"
+					}
+				}
+			},
 			"core/image": {
 				"css": "& img { box-shadow: var( --wp--preset--shadow--sm ); }"
 			},

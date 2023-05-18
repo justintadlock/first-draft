@@ -1,0 +1,16 @@
+/* The editor has an extra wrapper that doesn't exist in the front-end. */
+.wp-block-file,
+.wp-block-file__content-wrapper {
+	/* Fix box-sizing. */
+	box-sizing: border-box;
+
+	/* Flex for nicer display. */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Core hardcodes this font-size for some reason. */
+.wp-block-file:not(.wp-element-button) {
+	font-size: inherit;
+}

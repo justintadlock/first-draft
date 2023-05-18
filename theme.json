@@ -437,6 +437,30 @@
 					}
 				}
 			},
+			"core/pullquote": {
+				"border": {
+					"top": {
+						"color": "var( --wp--preset--color--neutral-400 )",
+						"style": "solid",
+						"width": "var( --wp--preset--spacing--10 )"
+					},
+					"bottom": {
+						"color": "var( --wp--preset--color--neutral-400 )",
+						"style": "solid",
+						"width": "var( --wp--preset--spacing--10 )"
+					}
+				},
+				"spacing": {
+					"padding": {
+						"top": "var( --wp--preset--spacing--80 )",
+						"bottom": "var( --wp--preset--spacing--80 )"
+					}
+				},
+				"typography": {
+					"fontSize": "var( --wp--preset--font-size--2-xl )",
+					"lineHeight": "var( --wp--custom--line-height--2-xl )"
+				}
+			},
 			"core/quote": {
 				"border": {
 					"left": {

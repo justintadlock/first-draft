@@ -1,0 +1,23 @@
+/* Zero out any default browser spacing. */
+.wp-block-pullquote blockquote {
+	margin: 0;
+	padding: 0;
+}
+
+/* Cite should be a block element since it sits alone here. */
+.wp-block-pullquote cite {
+	display: block;
+}
+
+/* Fix for WP not applying block spacing inside of pullquotes. */
+.wp-block-pullquote blockquote > * {
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+
+.wp-block-pullquote blockquote > * + * {
+	margin-block-start: var( --wp--style--block-gap );
+	margin-block-end: 0;
+}
+
+

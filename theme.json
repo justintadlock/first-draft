@@ -488,6 +488,12 @@
 					}
 				}
 			},
+			"core/calendar": {
+				"typography": {
+					"fontSize": "var( --wp--preset--font-size--lg )",
+					"lineHeight": "var( --wp--custom--line-height--lg )"
+				}
+			},
 			"core/code": {
 				"border": {
 					"color": "var( --wp--preset--color--neutral-400 )",

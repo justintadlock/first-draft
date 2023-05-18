@@ -1,0 +1,16 @@
+/* Removes WP's default background color on the header. */
+:where(.wp-block-calendar table:not(.has-background) th) {
+	background: unset;
+}
+
+/* Overwrites WP's default border-color on cells. */
+.wp-block-calendar table:where( :not( .has-text-color ) ) td,
+.wp-block-calendar table:where( :not( .has-text-color ) ) th {
+	border-color: var( --wp--preset--color--neutral-400 );
+}
+
+/* More spacing than WP's default for cells. */
+.wp-block-calendar td,
+.wp-block-calendar th {
+	padding: var( --wp--preset--spacing--30 ) var( --wp--preset--spacing--10 );
+}

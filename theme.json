@@ -463,8 +463,9 @@
 			},
 			"core/preformatted": {
 				"typography": {
-					"fontSize": "var( --wp--preset--font-size--lg )",
-					"lineHeight": "var( --wp--custom--line-height--lg )"
+					"fontFamily": "var( --wp--preset--font-family--mono )",
+					"fontSize": "var( --wp--preset--font-size--md )",
+					"lineHeight": "var( --wp--custom--line-height--md )"
 				}
 			},
 			"core/quote": {

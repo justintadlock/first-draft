@@ -240,15 +240,7 @@
 					"slug": "320"
 				}
 			],
-                        "units": [
-                                "rem",
-                                "em",
-                                "%",
-                                "vh",
-                                "vw",
-                                "px"
-                        ]
-
+                        "units": [ "rem", "em", "%", "vh", "vw", "px" ]
                 },
                 "typography": {
                         "customFontSize": false,

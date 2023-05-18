@@ -381,6 +381,21 @@
 					}
 				}
 			},
+			"core/code": {
+				"border": {
+					"color": "var( --wp--preset--color--neutral-400 )",
+					"style": "solid",
+					"width": "1px"
+				},
+				"spacing": {
+					"padding": "var( --wp--preset--spacing--80 )"
+				},
+				"typography": {
+					"fontFamily": "var( --wp--preset--font-family--mono )",
+					"fontSize": "var( --wp--preset--font-size--base )"
+				},
+				"css": "& code {\n\toverflow: auto;\n\tword-wrap: normal;\n\twhite-space: revert;\n}"
+			},
 			"core/image": {
 				"css": "& img { box-shadow: var( --wp--preset--shadow--sm ); }"
 			},
@@ -456,6 +471,15 @@
 							}
 						}
 					}
+				}
+			},
+			"core/table": {
+				"border": {
+					"color": "var( --wp--preset--color--neutral-400 )"
+				},
+				"typography": {
+					"fontSize": "var( --wp--preset--font-size--lg )",
+					"lineHeight": "var( --wp--custom--line-height--lg )"
 				}
 			}
 		},

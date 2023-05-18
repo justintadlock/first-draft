@@ -1,0 +1,27 @@
+/* Make WP's default borders smaller. */
+.wp-block-table thead,
+.wp-block-table tfoot {
+	border-width: 2px;
+}
+
+/* Fixes inconsistent default `thead` and `tfoot` alignment. */
+.wp-block-table thead tr {
+	text-align: left;
+}
+
+/* Consistent bold for headers. */
+.wp-block-table thead,
+.wp-block-table tfoot {
+	font-weight: 700;
+}
+
+/**
+ * `theme.json` border support for tables is horribly broken, so we're just
+ * inheriting everything here.
+ */
+.wp-block-table thead,
+.wp-block-table tfoot,
+.wp-block-table th,
+.wp-block-table td {
+	border-color: inherit;
+}

@@ -126,7 +126,7 @@
 			"lineHeight": {
 				"xs": "1.25rem",
 				"sm": "1.5rem",
-				"base": "1.5rem",
+				"md": "1.5rem",
 				"lg": "clamp( 1.75rem, 2.1875vw + 1.00625rem, 1.96875rem )",
 				"xl": "1.75",
 				"2-xl": "clamp( 2.1875rem, -1.875vw + 2.825rem, 2rem )",
@@ -303,9 +303,9 @@
 					"slug": "sm"
 				},
 				{
-					"name": "Medium (Base)",
+					"name": "Medium",
 					"size": "1rem",
-					"slug": "base"
+					"slug": "md"
 				},
 				{
 					"name": "Large",
@@ -392,7 +392,8 @@
 				},
 				"typography": {
 					"fontFamily": "var( --wp--preset--font-family--mono )",
-					"fontSize": "var( --wp--preset--font-size--base )"
+					"fontSize": "var( --wp--preset--font-size--md )",
+					"lineHeight": "var( --wp--preset--line-height--md )"
 				},
 				"css": "& code {\n\toverflow: auto;\n\tword-wrap: normal;\n\twhite-space: revert;\n}"
 			},

@@ -394,8 +394,7 @@
 					"fontFamily": "var( --wp--preset--font-family--mono )",
 					"fontSize": "var( --wp--preset--font-size--md )",
 					"lineHeight": "var( --wp--preset--line-height--md )"
-				},
-				"css": "& code {\n\toverflow: auto;\n\tword-wrap: normal;\n\twhite-space: revert;\n}"
+				}
 			},
 			"core/file": {
 				"border": {

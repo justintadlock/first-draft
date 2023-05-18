@@ -1,0 +1,6 @@
+/* Fixes for core's wrapping and overflow on the code block. */
+.wp-block-code code {
+	overflow: auto;
+	word-wrap: normal;
+	white-space: revert;
+}

@@ -32,25 +32,30 @@
 
 /**
  * WP doesn't yet support contextual spacing for headings and other elements, so
- * this is necessary to handle via CSS.
+ * this is necessary to handle via CSS. This loosens the spacing above headings
+ * and tightens the spacing below them in post content in most scenarios.
  *
  * @link https://developer.wordpress.org/news/2023/03/everything-you-need-to-know-about-spacing-in-block-themes/#contextual-spacing-for-headings
  */
 .wp-block-post-content * + :is( h1, h2, h3, h4, h5, h6 )  {
-	margin-top: var( --wp--preset--spacing--120 );
+	margin-block-start: var( --wp--preset--spacing--120 );
 }
 
 .wp-block-post-content :is( h1, h2, h3, h4, h5, h6 ) + * {
-	margin-top: var( --wp--preset--spacing--40 );
+	margin-block-start: var( --wp--preset--spacing--40 );
 }
 
-/**
- * WP doesn't yet have text-align support or element CSS support in `theme.json`.
- */
+.wp-block-post-content :where( hr, .wp-block-spacer ) + :is( h1, h2, h3, h4, h5, h6 ),
+.wp-block-post-content :is( h1, h2, h3, h4, h5, h6 ) + :where( hr, .wp-block-spacer ) {
+	margin-block-start: var( --wp--style--block-gap );
+}
+
+/* Center captions (WP doesn't support text-align in `theme.json`). */
 .wp-element-caption {
 	text-align: center;
 }
 
+/* Prefix `cite` elements (WP doesn't support element CSS `theme.json`). */
 cite::before {
 	content: "\2013\00a0"
 }

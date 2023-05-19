@@ -542,6 +542,14 @@
 			"core/image": {
 				"css": "& img { box-shadow: var( --wp--preset--shadow--sm ); }"
 			},
+			"core/latest-comments": {
+				"spacing": {
+					"padding": {
+						"left": "0",
+						"right": "0"
+					}
+				}
+			},
 			"core/post-date": {
 				"color": {
 					"text": "var( --wp--preset--color--neutral-700 )"

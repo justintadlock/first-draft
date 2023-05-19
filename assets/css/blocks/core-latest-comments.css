@@ -1,0 +1,10 @@
+/* Reverts WP's default comment date font-size. */
+.wp-block-latest-comments__comment-date {
+	font-size: inherit;
+}
+
+/* Adjusts WP's comment excerpt font-size and spacing. */
+.wp-block-latest-comments__comment-excerpt p {
+	font-size: inherit;
+	margin: var( --wp--preset--spacing--10 ) 0 0;
+}

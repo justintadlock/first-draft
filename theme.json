@@ -709,6 +709,13 @@
 			}
 		}
         },
+	"customTemplates": [
+		{
+		    "name": "template-single-sidebar",
+		    "title": "Single: Sidebar",
+		    "postTypes": [ "post" ]
+		}
+	],
 	"templateParts": [
 		{
 			"area": "header",
@@ -719,6 +726,11 @@
 			"area": "footer",
 			"name": "footer",
 			"title": "Footer"
+		},
+		{
+			"area": "uncategorized",
+			"name": "sidebar",
+			"title": "Sidebar"
 		},
 		{
 			"area": "uncategorized",

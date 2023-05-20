@@ -31,8 +31,15 @@ class BlockStyles
 	 */
 	public function register(): void
 	{
-		// Register a `hand-drawn` block style for the Image block.
-		// CSS housed in the `/assets/css/blocks/core-image.css` file.
+		// Reverses the order of columns on mobile.
+		// CSS in `/assets/css/blocks/core-columns.css`.
+		register_block_style( 'core/columns', [
+			'name'  => 'reverse-stack',
+			'label' => __( 'Reverse Stack', 'first-draft' )
+		] );
+
+		// A hand-drawn block style for the Image block.
+		// CSS in the `/assets/css/blocks/core-image.css`.
 		register_block_style( 'core/image', [
 			'name'  => 'hand-drawn',
 			'label' => __( 'Hand-Drawn', 'first-draft' )

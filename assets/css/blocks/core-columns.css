@@ -1,0 +1,6 @@
+/* Reverses the stacking order on mobile screens. */
+@media ( max-width: 782px ) {
+	.wp-block-columns.is-style-reverse-stack {
+		flex-direction: column-reverse;
+	}
+}

@@ -1,0 +1,9 @@
+/* Zeroes out WP's inherited gap between items in the mobile menu. */
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container {
+	gap: 0;
+}
+
+/* Zeroes out WP's default padding for submenus in the mobile menu. */
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__submenu-container {
+	padding-top: 0;
+}

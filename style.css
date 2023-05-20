@@ -37,6 +37,10 @@
  *
  * @link https://developer.wordpress.org/news/2023/03/everything-you-need-to-know-about-spacing-in-block-themes/#contextual-spacing-for-headings
  */
+.wp-block-post-content :is( h1, h2, h3, h4, h5, h6 ) {
+	margin-block-end: 0;
+}
+
 .wp-block-post-content * + :is( h1, h2, h3, h4, h5, h6 )  {
 	margin-block-start: var( --wp--preset--spacing--120 );
 }

@@ -4,6 +4,7 @@
 }
 
 /* Setting `border.radius` via `theme.json` applies it to the wrapper. */
+.wp-block-avatar > *,
 .wp-block-avatar__image,
 .wp-block-avatar__link {
 	border-radius: inherit;

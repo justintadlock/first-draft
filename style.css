@@ -63,3 +63,49 @@
 cite::before {
 	content: "\2013\00a0"
 }
+
+/**
+ * WP doesn't yet support form input styles in `theme.json`, so the below system
+ * adds border, color, and typography support. This can be defined via the
+ * `settings.custom.form.input` object in `theme.json` just like other blocks.
+ */
+input,
+select,
+textarea,
+:where( .wp-block-search__button-inside .wp-block-search__inside-wrapper ),
+.wp-block-search__input,
+.wp-block-post-comments-form input:not( .wp-element-button ),
+.wp-block-post-comments-form textarea {
+	color: var( --wp--custom--form--input--color--text, inherit );
+	background: var( --wp--custom--form--input--color--background, transparent );
+
+	font-family: var( --wp--custom--form--input--typography--font-family, inherit );
+	font-size: var( --wp--custom--form--input--typography--font-size, inherit );
+	font-style: var( --wp--custom--form--input--typography--font-style, inherit );
+	font-weight: var( --wp--custom--form--input--typography--font-weight, inherit );
+	line-height: var( --wp--custom--form--input--typography--line-height, inherit );
+	text-transform: var( --wp--custom--form--input--typography--text-transform, inherit );
+
+	border: var( --wp--custom--form--input--border-width, 1px )
+	        var( --wp--custom--form--input--border-style, solid )
+		var( --wp--custom--form--input--border-color, var( --wp--preset--color--neutral-300 ) );
+}
+
+input[type="checkbox"],
+input[type="radio"],
+.wp-block-search__button-inside .wp-block-search__input {
+	border: none;
+}
+
+/* Set the `settings.custom.form.label` object in `theme.json` to overwrite. */
+label {
+	color: var( --wp--custom--form--label--color--text, inherit );
+	background: var( --wp--custom--form--label--color--background, transparent );
+
+	font-family: var( --wp--custom--form--label--typography--font-family, inherit );
+	font-size: var( --wp--custom--form--label--typography--font-size, inherit );
+	font-style: var( --wp--custom--form--label--typography--font-style, inherit );
+	font-weight: var( --wp--custom--form--label--typography--font-weight, inherit );
+	line-height: var( --wp--custom--form--label--typography--line-height, inherit );
+	text-transform: var( --wp--custom--form--label--typography--text-transform, inherit );
+}

@@ -44,5 +44,14 @@ class BlockStyles
 			'name'  => 'hand-drawn',
 			'label' => __( 'Hand-Drawn', 'first-draft' )
 		] );
+
+		// Adds a "no gap" style for the Post Template block.
+		// CSS in the `/assets/css/blocks/core-post-template.css`.
+		// This can be removed with the block supports `blockGap`.
+		// @link https://github.com/WordPress/gutenberg/pull/49050
+		register_block_style( 'core/post-template', [
+			'name' => 'no-gap',
+			'label' => __( 'No Gap', 'first-draft' )
+		] );
 	}
 }

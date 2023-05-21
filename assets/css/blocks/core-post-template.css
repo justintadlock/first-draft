@@ -1,0 +1,31 @@
+/**
+ * Adds a "no gap" block style to the Post Template block. This is necessary
+ * until the block supports the `blockGap` design tool.
+ *
+ * @link https://github.com/WordPress/gutenberg/pull/49050
+ */
+.wp-block-post-template.is-layout-flow.is-style-no-gap > * + * {
+	margin-block-start: 0;
+}
+
+.wp-block-post-template.is-flex-container.is-style-no-gap {
+	gap: 0;
+}
+
+@media ( min-width: 600px ) {
+	.wp-block-post-template.is-flex-container.is-style-no-gap.columns-2 > .wp-block-post {
+		width: calc( 100% / 2 );
+	}
+	.wp-block-post-template.is-flex-container.is-style-no-gap.columns-3 > .wp-block-post {
+		width: calc( 100% / 3 );
+	}
+	.wp-block-post-template.is-flex-container.is-style-no-gap.columns-4 > .wp-block-post {
+		width: calc( 100% / 4 );
+	}
+	.wp-block-post-template.is-flex-container.is-style-no-gap.columns-5 > .wp-block-post {
+		width: calc( 100% / 5 );
+	}
+	.wp-block-post-template.is-flex-container.is-style-no-gap.columns-6 > .wp-block-post {
+		width: calc( 100% / 6 );
+	}
+}

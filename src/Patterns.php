@@ -21,7 +21,21 @@ class Patterns
          */
 	public function boot(): void
 	{
+		// Patterns theme support.
+		add_action( 'after_setup_theme', [ $this, 'themeSupport' ] );
+
+		// Register patterns/categories.
 		add_action( 'init', [ $this, 'register' ] );
+	}
+
+	/**
+	 *  Removes theme support for core patterns.
+	 *
+	 * @since 1.0.0
+	 */
+	public function themeSupport(): void
+	{
+		remove_theme_support( 'core-block-patterns' );
 	}
 
 	/**

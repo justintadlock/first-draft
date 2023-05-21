@@ -6,7 +6,7 @@
 /* Overwrites WP's default border-color on cells. */
 .wp-block-calendar table:where( :not( .has-text-color ) ) td,
 .wp-block-calendar table:where( :not( .has-text-color ) ) th {
-	border-color: var( --wp--preset--color--neutral-400 );
+	border-color: var( --wp--preset--color--neutral-300 );
 }
 
 /* More spacing than WP's default for cells. */

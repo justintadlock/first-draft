@@ -32,92 +32,92 @@
                                 },
                                 {
                                         "slug": "neutral-900",
-                                        "color": "#1a202c",
+                                        "color": "#0f172a",
                                         "name": "Neutral: 900"
                                 },
                                 {
                                         "slug": "neutral-800",
-                                        "color": "#2d3748",
+                                        "color": "#1e293b",
                                         "name": "Neutral: 800"
                                 },
                                 {
                                         "slug": "neutral-700",
-                                        "color": "#4a5568",
+                                        "color": "#334155",
                                         "name": "Neutral: 700"
                                 },
                                 {
                                         "slug": "neutral-600",
-                                        "color": "#718096",
+                                        "color": "#475569",
                                         "name": "Neutral: 600"
                                 },
                                 {
                                         "slug": "neutral-500",
-                                        "color": "#a0aec0",
+                                        "color": "#64748b",
                                         "name": "Neutral: 500"
                                 },
                                 {
                                         "slug": "neutral-400",
-                                        "color": "#cbd5e0",
+                                        "color": "#94a3b8",
                                         "name": "Neutral: 400"
                                 },
                                 {
                                         "slug": "neutral-300",
-                                        "color": "#e2e8f0",
+                                        "color": "#cbd5e1",
                                         "name": "Neutral: 300"
                                 },
                                 {
                                         "slug": "neutral-200",
-                                        "color": "#edf2f7",
+                                        "color": "#e2e8f0",
                                         "name": "Neutral: 200"
                                 },
                                 {
                                         "slug": "neutral-100",
-                                        "color": "#f7fafc",
+                                        "color": "#f1f5f9",
                                         "name": "Neutral: 100"
                                 },
                                 {
                                         "slug": "primary-900",
-                                        "color": "#2a4365",
+                                        "color": "#0c4a6e",
                                         "name": "Primary: 900"
                                 },
                                 {
                                         "slug": "primary-800",
-                                        "color": "#2c5282",
+                                        "color": "#075985",
                                         "name": "Primary: 800"
                                 },
                                 {
                                         "slug": "primary-700",
-                                        "color": "#2b6cb0",
+                                        "color": "#0369a1",
                                         "name": "Primary: 700"
                                 },
                                 {
                                         "slug": "primary-600",
-                                        "color": "#3182ce",
+                                        "color": "#0284c7",
                                         "name": "Primary: 600"
                                 },
                                 {
                                         "slug": "primary-500",
-                                        "color": "#4299e1",
+                                        "color": "#0ea5e9",
                                         "name": "Primary: 500"
                                 },
                                 {
                                         "slug": "primary-400",
-                                        "color": "#63b3ed",
+                                        "color": "#38bdf8",
                                         "name": "Primary: 400"
                                 },
                                 {
                                         "slug": "primary-300",
-                                        "color": "#90cdf4",
+                                        "color": "#7dd3fc",
                                         "name": "Primary: 300"
                                 },
                                 {
                                         "slug": "primary-200",
-                                        "color": "#bee3f8",
+                                        "color": "#bae6fd",
                                         "name": "Primary: 200"
                                 },
                                 {
                                         "slug": "primary-100",
-                                        "color": "#ebf8ff",
+                                        "color": "#e0f2fe",
                                         "name": "Primary: 100"
                                 }
                         ]
@@ -364,6 +364,24 @@
                 },
                 "elements": {
 			"button": {
+				"border": {
+					"radius": "0"
+				},
+				"color": {
+					"background": "var( --wp--preset--color--primary-600 )"
+				},
+				"spacing": {
+					"padding": {
+						"top": "var( --wp--preset--spacing--20 )",
+						"bottom": "var( --wp--preset--spacing--20 )",
+						"left": "var( --wp--preset--spacing--60 )",
+						"right": "var( --wp--preset--spacing--60 )"
+					}
+				},
+				"typography": {
+					"fontSize": "var( --wp--preset--font-size--lg )",
+					"lineHeight": "var( --wp--custom--line-height--lg )"
+				},
 				":focus": {
 					"color": {
 						"background": "var( --wp--preset--color--primary-800 )"
@@ -379,25 +397,6 @@
 					"typography": {
 						"textDecoration": "underline"
 					}
-				},
-				"border": {
-					"radius": "0"
-				},
-				"color": {
-					"background": "var( --wp--preset--color--primary-500 )",
-					"text": "var( --wp--preset--color--white )"
-				},
-				"spacing": {
-					"padding": {
-						"top": "var( --wp--preset--spacing--20 )",
-						"bottom": "var( --wp--preset--spacing--20 )",
-						"left": "var( --wp--preset--spacing--60 )",
-						"right": "var( --wp--preset--spacing--60 )"
-					}
-				},
-				"typography": {
-					"fontSize": "var( --wp--preset--font-size--lg )",
-					"lineHeight": "var( --wp--custom--line-height--lg )"
 				}
 			},
 			"caption": {
@@ -405,7 +404,8 @@
 					"text": "var( --wp--preset--color--neutral-700 )"
 				},
 				"typography": {
-					"fontSize": "var( --wp--preset--font-size--lg )"
+					"fontSize": "var( --wp--preset--font-size--lg )",
+					"lineHeight": "var( --wp--custom--line-height--lg )"
 				}
 			},
 			"cite": {
@@ -498,7 +498,7 @@
 			},
 			"core/code": {
 				"border": {
-					"color": "var( --wp--preset--color--neutral-400 )",
+					"color": "var( --wp--preset--color--neutral-300 )",
 					"style": "solid",
 					"width": "1px"
 				},
@@ -513,7 +513,7 @@
 			},
 			"core/details": {
 				"border": {
-					"color": "var( --wp--preset--color--neutral-400 )",
+					"color": "var( --wp--preset--color--neutral-300 )",
 					"style": "solid",
 					"width": "1px"
 				},
@@ -528,7 +528,7 @@
 			},
 			"core/file": {
 				"border": {
-					"color": "var( --wp--preset--color--neutral-400 )",
+					"color": "var( --wp--preset--color--neutral-300 )",
 					"style": "solid",
 					"width": "1px"
 				},
@@ -592,12 +592,12 @@
 			"core/pullquote": {
 				"border": {
 					"top": {
-						"color": "var( --wp--preset--color--neutral-400 )",
+						"color": "var( --wp--preset--color--neutral-300 )",
 						"style": "solid",
 						"width": "var( --wp--preset--spacing--10 )"
 					},
 					"bottom": {
-						"color": "var( --wp--preset--color--neutral-400 )",
+						"color": "var( --wp--preset--color--neutral-300 )",
 						"style": "solid",
 						"width": "var( --wp--preset--spacing--10 )"
 					}
@@ -623,7 +623,7 @@
 			"core/quote": {
 				"border": {
 					"left": {
-						"color": "var( --wp--preset--color--neutral-400 )",
+						"color": "var( --wp--preset--color--neutral-300 )",
 						"style": "solid",
 						"width": "var( --wp--preset--spacing--10 )"
 					}
@@ -664,7 +664,7 @@
 			},
 			"core/separator": {
 				"color": {
-					"text": "var( --wp--preset--color--neutral-400 )"
+					"text": "var( --wp--preset--color--neutral-300 )"
 				}
 			},
 			"core/site-title": {
@@ -699,7 +699,7 @@
 			},
 			"core/table": {
 				"border": {
-					"color": "var( --wp--preset--color--neutral-400 )"
+					"color": "var( --wp--preset--color--neutral-300 )"
 				},
 				"typography": {
 					"fontSize": "var( --wp--preset--font-size--lg )",

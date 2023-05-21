@@ -12,7 +12,7 @@
 
 namespace FirstDraft;
 
-class Patterns
+class BlockPatterns
 {
 	/**
          * Boots the component, running its actions/filters.

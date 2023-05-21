@@ -11,7 +11,7 @@
 
 namespace FirstDraft;
 
-class BlockStyles
+class BlockStyleVariations
 {
 	/**
          * Boots the component, running its actions/filters.

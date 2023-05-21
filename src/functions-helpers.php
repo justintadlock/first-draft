@@ -32,8 +32,8 @@ function theme( string $abstract = '' )
 		// be booted when the theme launches.
 		$bindings = [
 			'assets'       => new Assets(),
-			'block-styles' => new BlockStyles(),
-			'patterns'     => new Patterns()
+			'block-styles' => new BlockStyleVariations(),
+			'patterns'     => new BlockPatterns()
 		];
 
 		// Boot each of the components.

@@ -247,35 +247,39 @@
                         "dropCap": true,
                         "fontFamilies": [
                                 {
-                                        "fontFamily": "inherit",
-                                        "slug": "headings",
-                                        "name": "Headings"
-                                },
-                                {
-                                        "fontFamily": "Karla, sans-serif",
+                                        "fontFamily": "Oswald, sans-serif",
                                         "slug": "primary",
                                         "name": "Primary",
 					"fontFace": [
 						{
+							"fontFamily": "Oswald",
+							"fontWeight": "200 700",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/oswald/oswald.woff2" ]
+						}
+					]
+                                },
+                                {
+                                        "fontFamily": "Karla, sans-serif",
+                                        "slug": "secondary",
+                                        "name": "Secondary",
+					"fontFace": [
+						{
 							"fontFamily": "Karla",
-							"fontWeight": "400 700",
+							"fontWeight": "200 800",
 							"fontStyle": "normal",
 							"fontStretch": "normal",
 							"src": [ "file:./assets/fonts/karla/karla.woff2" ]
 						},
 						{
 							"fontFamily": "Karla",
-							"fontWeight": "400 700",
+							"fontWeight": "200 800",
 							"fontStyle": "italic",
 							"fontStretch": "normal",
 							"src": [ "file:./assets/fonts/karla/karla-italic.woff2" ]
 						}
 					]
-                                },
-                                {
-                                        "fontFamily": "Lora, Georgia, serif",
-                                        "slug": "secondary",
-                                        "name": "Secondary"
                                 },
                                 {
                                         "fontFamily": "\"Source Code Pro\", Monaco, Consolas, \"Andale Mono WT\", \"Andale Mono\", \"Lucida Console\", \"Lucida Sans Typewriter\", \"DejaVu Sans Mono\", \"Bitstream Vera Sans Mono\", \"Liberation Mono\", \"Nimbus Mono L\", \"Courier New\", Courier, monospace",
@@ -354,7 +358,7 @@
 			}
                 },
                 "typography": {
-                        "fontFamily": "var( --wp--preset--font-family--primary )",
+                        "fontFamily": "var( --wp--preset--font-family--secondary )",
                         "fontSize": "var( --wp--preset--font-size--xl )",
                         "lineHeight": "var( --wp--custom--line-height--xl )"
                 },
@@ -415,8 +419,8 @@
 			},
 			"heading": {
 				"typography": {
-					"fontFamily": "var( --wp--preset--font-family--headings )",
-					"fontWeight": "400"
+					"fontFamily": "var( --wp--preset--font-family--primary )",
+					"fontWeight": "700"
 				}
 			},
 			"h1": {
@@ -446,15 +450,13 @@
 			"h5": {
 				"typography": {
 					"fontSize": "var( --wp--preset--font-size--xl )",
-					"lineHeight": "var( --wp--custom--line-height--xl )",
-					"textTransform": "uppercase"
+					"lineHeight": "var( --wp--custom--line-height--xl )"
 				}
 			},
 			"h6": {
 				"typography": {
 					"fontSize": "var( --wp--preset--font-size--lg )",
-					"lineHeight": "var( --wp--custom--line-height--lg )",
-					"textTransform": "uppercase"
+					"lineHeight": "var( --wp--custom--line-height--lg )"
 				}
 			},
                         "link": {

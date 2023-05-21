@@ -1,0 +1,8 @@
+/**
+ * Adds some baseline layout to pagination numbers. Core has almost no design
+ * tools available for this block.
+ */
+.wp-block-comments-pagination-numbers {
+	display: flex;
+	gap: 0.5rem;
+}

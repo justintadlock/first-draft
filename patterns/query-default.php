@@ -14,7 +14,11 @@
 		<article class="wp-block-group">
 			<!-- wp:group {"tagName":"header","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
 			<header class="wp-block-group">
-				<!-- wp:post-date /-->
+				<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"},"fontSize":"lg"} -->
+				<div class="wp-block-group has-lg-font-size">
+					<!-- wp:post-date /-->
+				</div>
+				<!-- /wp:group -->
 				<!-- wp:post-title {"isLink":true} /-->
 			</header>
 			<!-- /wp:group -->

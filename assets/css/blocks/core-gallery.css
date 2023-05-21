@@ -1,5 +1,0 @@
-
-/* Setting `spacing.blockGap` doesn't work via `theme.json`. */
-.wp-block-gallery {
-	--wp--style--gallery-gap-default: var( --wp--preset--spacing--40 );
-}

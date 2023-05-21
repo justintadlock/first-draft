@@ -16,11 +16,6 @@
                         "link": true,
                         "palette": [
                                 {
-                                        "slug": "transparent",
-                                        "color": "transparent",
-                                        "name": "Transparent"
-                                },
-                                {
                                         "slug": "black",
                                         "color": "#000000",
                                         "name": "Black"

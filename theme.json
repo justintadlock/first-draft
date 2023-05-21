@@ -563,9 +563,6 @@
 				"css": "& img { box-shadow: var( --wp--preset--shadow--sm ); }"
 			},
 			"core/navigation": {
-				"color": {
-					"text": "var( --wp--preset--color--neutral-700 )"
-				},
 				"spacing": {
 					"blockGap": "var( --wp--preset--spacing--60 )"
 				},

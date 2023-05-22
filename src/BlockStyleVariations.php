@@ -38,13 +38,6 @@ class BlockStyleVariations
 			'label' => __( 'Reverse Stack', 'first-draft' )
 		] );
 
-		// A hand-drawn block style for the Image block.
-		// CSS in the `/assets/css/blocks/core-image.css`.
-		register_block_style( 'core/image', [
-			'name'  => 'hand-drawn',
-			'label' => __( 'Hand-Drawn', 'first-draft' )
-		] );
-
 		// Adds a "no gap" style for the Post Template block.
 		// CSS in the `/assets/css/blocks/core-post-template.css`.
 		// This can be removed with the block supports `blockGap`.

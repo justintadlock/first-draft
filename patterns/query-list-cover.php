@@ -3,6 +3,7 @@
  * Title: Query: List Cover
  * Slug: first-draft/query-list-cover
  * Categories: theme, query
+ * Keywords: query, cover, posts
  * Block Types: core/query
  * Viewport Width: 1376
  */

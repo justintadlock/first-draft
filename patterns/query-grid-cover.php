@@ -3,6 +3,7 @@
  * Title: Query: Grid Cover
  * Slug: first-draft/query-grid-cover
  * Categories: theme, query
+ * Keywords: query, cover, grid, posts
  * Block Types: core/query
  * Viewport Width: 1376
  */

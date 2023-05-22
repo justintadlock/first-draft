@@ -3,6 +3,7 @@
  * Title: Query: List Default
  * Slug: first-draft/query-list-default
  * Categories: theme, query
+ * Keywords: query, posts
  * Block Types: core/query
  */
 ?>

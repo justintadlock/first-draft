@@ -557,7 +557,7 @@
 				"css": "--wp--style--gallery-gap-default: var( --wp--preset--spacing--40 );"
 			},
 			"core/image": {
-				"css": "& img { box-shadow: var( --wp--preset--shadow--sm ); }"
+				"css": "& img {\n\tbox-shadow: var( --wp--preset--shadow--sm );\n}"
 			},
 			"core/latest-comments": {
 				"spacing": {
@@ -568,7 +568,7 @@
 				}
 			},
 			"core/post-featured-image": {
-				"css": "& img { box-shadow: var( --wp--preset--shadow--sm ); }"
+				"css": "& img {\n\tbox-shadow: var( --wp--preset--shadow--sm );\n}"
 			},
 			"core/navigation": {
 				"spacing": {
@@ -703,7 +703,7 @@
 				"spacing": {
 					"blockGap": "var( --wp--preset--spacing--40 )"
 				},
-				"css": "&:not( .is-style-logos-only ) .wp-block-social-link { box-shadow: var( --wp--preset--shadow--sm ); }"
+				"css": "&:not( .is-style-logos-only ) .wp-block-social-link {\n\tbox-shadow: var( --wp--preset--shadow--sm );\n}"
 			},
 			"core/table": {
 				"border": {

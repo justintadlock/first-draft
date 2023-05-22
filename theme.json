@@ -16,16 +16,6 @@
                         "link": true,
                         "palette": [
                                 {
-                                        "slug": "black",
-                                        "color": "#000000",
-                                        "name": "Black"
-                                },
-                                {
-                                        "slug": "white",
-                                        "color": "#ffffff",
-                                        "name": "White"
-                                },
-                                {
                                         "slug": "neutral-900",
                                         "color": "#0f172a",
                                         "name": "Neutral: 900"

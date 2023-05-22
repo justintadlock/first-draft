@@ -249,7 +249,7 @@
                                 {
                                         "fontFamily": "Oswald, sans-serif",
                                         "slug": "primary",
-                                        "name": "Primary",
+                                        "name": "Primary (Oswald)",
 					"fontFace": [
 						{
 							"fontFamily": "Oswald",
@@ -263,7 +263,7 @@
                                 {
                                         "fontFamily": "Karla, sans-serif",
                                         "slug": "secondary",
-                                        "name": "Secondary",
+                                        "name": "Secondary (Karla)",
 					"fontFace": [
 						{
 							"fontFamily": "Karla",

@@ -2,6 +2,7 @@
 /**
  * Title: Post List: Cover
  * Slug: first-draft/post-list-cover
+ * Description: Displays the queried posts in a list. Each post is wrapped in a full-height and width Cover block with a featured image background.
  * Categories: theme, query
  * Keywords: query, cover, posts
  * Block Types: core/query

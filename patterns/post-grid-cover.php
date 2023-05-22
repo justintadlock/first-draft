@@ -2,6 +2,7 @@
 /**
  * Title: Post Grid: Cover
  * Slug: first-draft/post-grid-cover
+ * Description: Displays the queried posts in a three-column grid. Each post is wrapped in a Cover block with a featured image background.
  * Categories: theme, query
  * Keywords: query, cover, grid, posts
  * Block Types: core/query

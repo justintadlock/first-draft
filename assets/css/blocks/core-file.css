@@ -10,7 +10,7 @@
 	align-items: center;
 }
 
-/* Core hardcodes this font-size for some reason. */
+/* Overwrite WP's hard-coded font-size so that it inherits from its parent. */
 .wp-block-file:not(.wp-element-button) {
 	font-size: inherit;
 }

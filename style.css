@@ -5,10 +5,10 @@
  * Version:           1.0.0
  * Author:            Your Name
  * Author URI:        https://yourwebsite.tld
- * Tags:              block-patterns, block-styles, full-site-editing, wide-blocks
+ * Tags:              block-patterns, block-styles, editor-style, full-site-editing, wide-blocks
  * Text Domain:       first-draft
  * Domain Path:       /assets/lang
- * Tested up to:      6.2
+ * Tested up to:      6.3
  * Requires at least: 6.2
  * Requires PHP:      7.4
  * License:           GNU General Public License v2.0 or later
@@ -18,7 +18,7 @@
 /**
  * WP has no way to tie a line-height to a font-size. This code combines line
  * heights that are set via `settings.custom.lineHeight` in `theme.json` with
- * its related font-size.
+ * the corresponding font-size set via `setting.typography.fontSizes`.
  */
 .has-5-xl-font-size { line-height: var( --wp--custom--line-height--5-xl ); }
 .has-4-xl-font-size { line-height: var( --wp--custom--line-height--4-xl ); }
@@ -34,8 +34,6 @@
  * WP doesn't yet support contextual spacing for headings and other elements, so
  * this is necessary to handle via CSS. This loosens the spacing above headings
  * and tightens the spacing below them in post content in most scenarios.
- *
- * @link https://developer.wordpress.org/news/2023/03/everything-you-need-to-know-about-spacing-in-block-themes/#contextual-spacing-for-headings
  */
 .wp-block-post-content :is( h1, h2, h3, h4, h5, h6 ) {
 	margin-block-end: 0;
@@ -59,16 +57,12 @@
 	text-align: center;
 }
 
-/* Prefix `cite` elements (WP doesn't support element CSS `theme.json`). */
+/* Prefix `cite` elements (WP doesn't support element CSS in `theme.json`). */
 cite::before {
 	content: "\2013\00a0"
 }
 
-/**
- * WP doesn't yet support form input styles in `theme.json`, so the below system
- * adds border, color, and typography support. This can be defined via the
- * `settings.custom.form.input` object in `theme.json` just like other blocks.
- */
+/* Adds form element styles, which aren't yet supported in `theme.json`. */
 input,
 select,
 textarea,
@@ -76,36 +70,18 @@ textarea,
 .wp-block-search__input,
 .wp-block-post-comments-form input:not( .wp-element-button ),
 .wp-block-post-comments-form textarea {
-	color: var( --wp--custom--form--input--color--text, inherit );
-	background: var( --wp--custom--form--input--color--background, transparent );
-
-	font-family: var( --wp--custom--form--input--typography--font-family, inherit );
-	font-size: var( --wp--custom--form--input--typography--font-size, inherit );
-	font-style: var( --wp--custom--form--input--typography--font-style, inherit );
-	font-weight: var( --wp--custom--form--input--typography--font-weight, inherit );
-	line-height: var( --wp--custom--form--input--typography--line-height, inherit );
-	text-transform: var( --wp--custom--form--input--typography--text-transform, inherit );
-
-	border: var( --wp--custom--form--input--border-width, 1px )
-	        var( --wp--custom--form--input--border-style, solid )
-		var( --wp--custom--form--input--border-color, var( --wp--preset--color--neutral-300 ) );
+	font-family: inherit;
+	font-size: inherit;
+	font-style: normal;
+	font-weight: 400;
+	line-height: inherit;
+	color: inherit;
+	background: transparent;
+	border: 1px solid var( --wp--preset--color--neutral-300 );
 }
 
 input[type="checkbox"],
 input[type="radio"],
 .wp-block-search__button-inside .wp-block-search__input {
 	border: none;
-}
-
-/* Set the `settings.custom.form.label` object in `theme.json` to overwrite. */
-label {
-	color: var( --wp--custom--form--label--color--text, inherit );
-	background: var( --wp--custom--form--label--color--background, transparent );
-
-	font-family: var( --wp--custom--form--label--typography--font-family, inherit );
-	font-size: var( --wp--custom--form--label--typography--font-size, inherit );
-	font-style: var( --wp--custom--form--label--typography--font-style, inherit );
-	font-weight: var( --wp--custom--form--label--typography--font-weight, inherit );
-	line-height: var( --wp--custom--form--label--typography--line-height, inherit );
-	text-transform: var( --wp--custom--form--label--typography--text-transform, inherit );
 }

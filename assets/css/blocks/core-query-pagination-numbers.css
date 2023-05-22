@@ -4,5 +4,5 @@
  */
 .wp-block-query-pagination-numbers {
 	display: flex;
-	gap: 0.5rem;
+	gap: var( --wp--preset--spacing--20 );
 }

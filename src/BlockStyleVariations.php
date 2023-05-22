@@ -1,7 +1,7 @@
 <?php
 /**
- * The Block Styles class is responsible for registering custom block style
- * variations the theme needs.
+ * The Block Style Variations class is responsible for registering custom block
+ * style variations the theme needs.
  *
  * @author    Your Name <youremail@domain.tld>
  * @copyright Copyright (c) 2023, Your Name
@@ -33,10 +33,10 @@ class BlockStyleVariations
 	{
 		// Adds a "no gap" style for the Post Template block.
 		// CSS in the `/assets/css/blocks/core-post-template.css`.
-		// This can be removed with the block supports `blockGap`.
+		// This can be removed when the block supports `blockGap`.
 		// @link https://github.com/WordPress/gutenberg/pull/49050
 		register_block_style( 'core/post-template', [
-			'name' => 'no-gap',
+			'name'  => 'no-gap',
 			'label' => __( 'No Gap', 'first-draft' )
 		] );
 	}

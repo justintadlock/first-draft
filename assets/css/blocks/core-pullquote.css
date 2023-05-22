@@ -1,10 +1,10 @@
-/* Zero out any default browser spacing. */
+/* Zero out default browser spacing. */
 .wp-block-pullquote blockquote {
 	margin: 0;
 	padding: 0;
 }
 
-/* Cite should be a block element since it sits alone here. */
+/* Cite doesn't have a standalone block-level wrapper. */
 .wp-block-pullquote cite {
 	display: block;
 }

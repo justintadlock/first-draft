@@ -1,4 +1,4 @@
-/* Fixes for core's wrapping and overflow on the code block. */
+/* Fixes for WP's wrapping and overflow on the code block. */
 .wp-block-code code {
 	overflow: auto;
 	word-wrap: normal;

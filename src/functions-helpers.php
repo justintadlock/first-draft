@@ -1,6 +1,6 @@
 <?php
 /**
- * The helpers function file houses any necessary PHP functions for the theme.
+ * The helpers functions file houses any necessary PHP functions for the theme.
  *
  * @author    Your Name <youremail@domain.tld>
  * @copyright Copyright (c) 2023, Your Name
@@ -14,14 +14,14 @@ namespace FirstDraft;
  * Mini container used to reference the various theme components. Bootstraps the
  * theme on first call by executing each component's `boot()` method. The
  * `theme()` function acts as the single instance of the theme, and devs can
- * access any class/component by passing in its reference via the `$abstract`
+ * access any class/component by passing in its reference via the `$component`
  * parameter (useful for accessing hooks within classes).
  *
  * @since  1.0.0
  * @return mixed
  * @todo   Add `mixed` return type declaration with PHP 8-only support.
  */
-function theme( string $abstract = '' )
+function theme( string $component = '' )
 {
         static $bindings = [];
 
@@ -31,9 +31,9 @@ function theme( string $abstract = '' )
 		// Bind instances of the theme's component classes that need to
 		// be booted when the theme launches.
 		$bindings = [
-			'assets'       => new Assets(),
-			'block-styles' => new BlockStyleVariations(),
-			'patterns'     => new BlockPatterns()
+			'assets'                 => new Assets(),
+			'block-style-variations' => new BlockStyleVariations(),
+			'block-patterns'         => new BlockPatterns()
 		];
 
 		// Boot each of the components.
@@ -42,5 +42,5 @@ function theme( string $abstract = '' )
 		}
 	}
 
-	return '' === $abstract ? $bindings : $bindings[ $abstract ];
+	return '' === $component ? $bindings : $bindings[ $component ];
 }

@@ -1,7 +1,7 @@
 <?php
 /**
- * Theme functions file, which is auto-loaded by WordPress. Use this file to run
- * any custom PHP necessary for the theme.
+ * Theme functions file, which is auto-loaded by WordPress. Use this file to
+ * load additional PHP files and bootstrap the theme.
  *
  * @author    Your Name <youremail@domain.tld>
  * @copyright Copyright (c) 2023, Your Name
@@ -11,13 +11,13 @@
 
 namespace FirstDraft;
 
-// Load functions files.
-require_once get_parent_theme_file_path( 'src/functions-helpers.php' );
-
 // Load class files.
 require_once get_parent_theme_file_path( 'src/Assets.php'               );
 require_once get_parent_theme_file_path( 'src/BlockStyleVariations.php' );
 require_once get_parent_theme_file_path( 'src/BlockPatterns.php'        );
+
+// Load functions files.
+require_once get_parent_theme_file_path( 'src/functions-helpers.php' );
 
 // Bootstrap the theme.
 theme();

@@ -1,8 +1,8 @@
 <?php
 /**
- * The Patterns class is responsible for registering block pattern categories
- * and block patterns. However, it's recommended to register patterns by placing
- * individual files in the `/patterns` folder.
+ * The Block Patterns class is responsible for registering block pattern
+ * categories and block patterns. However, it's recommended to register patterns
+ * by placing individual files in the `/patterns` folder.
  *
  * @author    Your Name <youremail@domain.tld>
  * @copyright Copyright (c) 2023, Your Name

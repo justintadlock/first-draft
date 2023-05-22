@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: Query: List Default
- * Slug: first-draft/query-list-default
+ * Title: Post List: Default
+ * Slug: first-draft/post-list-default
  * Categories: theme, query
  * Keywords: query, posts
  * Block Types: core/query

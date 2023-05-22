@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: Query: List Cover
- * Slug: first-draft/query-list-cover
+ * Title: Post List: Cover
+ * Slug: first-draft/post-list-cover
  * Categories: theme, query
  * Keywords: query, cover, posts
  * Block Types: core/query

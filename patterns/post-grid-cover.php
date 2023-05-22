@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: Query: Grid Cover
- * Slug: first-draft/query-grid-cover
+ * Title: Post Grid: Cover
+ * Slug: first-draft/post-grid-cover
  * Categories: theme, query
  * Keywords: query, cover, grid, posts
  * Block Types: core/query

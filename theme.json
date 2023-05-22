@@ -651,17 +651,11 @@
 							"textDecoration": "none"
 						},
 						":focus": {
-							"color": {
-								"text": "var( --wp--preset--color--primary-800 )"
-							},
 							"typography": {
 								"textDecoration": "underline"
 							}
 						},
 						":hover": {
-							"color": {
-								"text": "var( --wp--preset--color--primary-800 )"
-							},
 							"typography": {
 								"textDecoration": "underline"
 							}

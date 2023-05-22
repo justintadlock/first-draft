@@ -31,13 +31,6 @@ class BlockStyleVariations
 	 */
 	public function register(): void
 	{
-		// Reverses the order of columns on mobile.
-		// CSS in `/assets/css/blocks/core-columns.css`.
-		register_block_style( 'core/columns', [
-			'name'  => 'reverse-stack',
-			'label' => __( 'Reverse Stack', 'first-draft' )
-		] );
-
 		// Adds a "no gap" style for the Post Template block.
 		// CSS in the `/assets/css/blocks/core-post-template.css`.
 		// This can be removed with the block supports `blockGap`.

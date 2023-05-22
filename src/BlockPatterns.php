@@ -50,7 +50,8 @@ class BlockPatterns
 	{
 		// Registers a base `theme` category.
 		register_block_pattern_category( 'theme', [
-			'label' => __( 'Theme', 'first-draft' )
+			'label'       => __( 'Theme', 'first-draft' ),
+			'description' => __( 'Patterns registered by the theme.', 'first-draft' )
 		] );
 	}
 }

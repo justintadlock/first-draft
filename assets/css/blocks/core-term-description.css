@@ -1,0 +1,9 @@
+/* Fix for WP not applying block spacing for nested elements. */
+.wp-block-term-description > * {
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+
+.wp-block-term-description > * + * {
+	margin-block-start: var( --wp--style--block-gap );
+}

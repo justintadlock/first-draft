@@ -28,9 +28,6 @@ class Assets
 
                 // Enqueue block-specific styles.
                 add_action( 'init', [ $this, 'enqueueBlockStyles' ] );
-
-                // Front-end and editor.
-                add_action( 'enqueue_block_assets', [ $this, 'enqueueBlockAssets' ] );
 	}
 
         /**
@@ -109,21 +106,5 @@ class Assets
 				'ver'    => filemtime( get_parent_theme_file_path( "assets/css/blocks/{$name}.css" ) )
                         ] );
                 }
-        }
-
-        /**
-	 * Deregister the core block library theme stylesheet.
-	 *
-	 * @link  https://github.com/WordPress/gutenberg/issues/15007
-	 * @since 1.0.0
-	 */
-        public function enqueueBlockAssets(): void
-	{
-		// Deregister core theme styles.
-                wp_deregister_style( 'wp-block-library-theme' );
-
-                // Re-register core theme styles with an empty string. This is
-                // necessary to get styles set up correctly.
-                wp_register_style( 'wp-block-library-theme', '' );
         }
 }

@@ -84,6 +84,10 @@ class Assets
                                 '.css'
                         ], '', $file );
 
+			// Sanitize the name to make sure it contains only
+			// characters allowed in a block type name.
+			$name = preg_replace( '/[^a-z0-9-]/', '', strtolower( $name ) );
+
 			// Get the position of the first hyphen.
 			$pos = strpos( $name, '-' );
 

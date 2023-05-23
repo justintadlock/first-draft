@@ -30,11 +30,7 @@
 .has-sm-font-size   { line-height: var( --wp--custom--line-height--sm ); }
 .has-xs-font-size   { line-height: var( --wp--custom--line-height--xs ); }
 
-/**
- * WP doesn't yet support contextual spacing for headings and other elements, so
- * this is necessary to handle via CSS. This loosens the spacing above headings
- * and tightens the spacing below them in post content in most scenarios.
- */
+/* Loosens the spacing above headings tightens the spacing below. */
 .wp-block-post-content :is( h1, h2, h3, h4, h5, h6 ) {
 	margin-block-end: 0;
 }

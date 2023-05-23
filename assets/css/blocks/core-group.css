@@ -1,0 +1,5 @@
+/* Add default padding to Group blocks with a background. */
+.wp-block-group.has-background,
+.editor-styles-wrapper .wp-block-group.has-background {
+	padding: var( --wp--style--block-gap );
+}

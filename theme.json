@@ -247,7 +247,7 @@
                         "dropCap": true,
                         "fontFamilies": [
                                 {
-                                        "fontFamily": "Oswald, sans-serif",
+                                        "fontFamily": "Oswald, ui-sans-serif, sans-serif",
                                         "slug": "primary",
                                         "name": "Primary (Oswald)",
 					"fontFace": [
@@ -261,7 +261,7 @@
 					]
                                 },
                                 {
-                                        "fontFamily": "Karla, sans-serif",
+                                        "fontFamily": "Karla, ui-sans-serif, sans-serif",
                                         "slug": "secondary",
                                         "name": "Secondary (Karla)",
 					"fontFace": [

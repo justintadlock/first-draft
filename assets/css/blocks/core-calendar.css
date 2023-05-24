@@ -4,14 +4,12 @@
 }
 
 /* Overwrites WP's default border-color on cells. */
-.wp-block-calendar table:where( :not( .has-text-color ) ) td,
-.wp-block-calendar table:where( :not( .has-text-color ) ) th {
+.wp-block-calendar table:where( :not( .has-text-color ) ) :is( td, th ) {
 	border-color: var( --wp--preset--color--neutral-300 );
 }
 
 /* More spacing than WP's default for cells. */
-.wp-block-calendar td,
-.wp-block-calendar th {
+.wp-block-calendar :is( td, th ) {
 	padding: var( --wp--preset--spacing--30 ) var( --wp--preset--spacing--10 );
 }
 

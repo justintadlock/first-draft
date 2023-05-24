@@ -100,8 +100,7 @@ select,
 textarea,
 :where( .wp-block-search__button-inside .wp-block-search__inside-wrapper ),
 .wp-block-search__input,
-.wp-block-post-comments-form input:not( .wp-element-button ),
-.wp-block-post-comments-form textarea {
+.wp-block-post-comments-form :is( input:not( .wp-element-button ), textarea ) {
 	font-family: inherit;
 	font-size: inherit;
 	font-style: normal;

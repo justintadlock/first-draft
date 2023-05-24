@@ -4,8 +4,6 @@
 }
 
 /* Loosen the spacing between elements in a list. */
-.wp-block-post-content :where( li + li ),
-.wp-block-post-content :where( li > ul ),
-.wp-block-post-content :where( li > ol ) {
+.wp-block-post-content :where( li + li, li > ul, li > ol ) {
 	margin-block-start: var( --wp--preset--spacing--20 );
 }

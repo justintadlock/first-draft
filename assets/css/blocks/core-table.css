@@ -1,6 +1,5 @@
 /* Make WP's default borders smaller. */
-.wp-block-table thead,
-.wp-block-table tfoot {
+.wp-block-table :is( thead, tfoot ) {
 	border-width: 2px;
 }
 
@@ -10,17 +9,15 @@
 }
 
 /* Less prominent bold for headers. */
-.wp-block-table th,
-.wp-block-table tfoot { font-weight: 500; }
+.wp-block-table :where( th, tfoot ) {
+	font-weight: 500;
+}
 
 /**
  * `theme.json` border support for tables is horribly broken, so we're just
  * inheriting everything here.
  */
-.wp-block-table thead,
-.wp-block-table tfoot,
-.wp-block-table tr th,
-.wp-block-table tr td {
+.wp-block-table :is( thead, tfoot, tr th, tr td ) {
 	border-color: inherit;
 }
 

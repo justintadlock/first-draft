@@ -9,11 +9,9 @@
 	text-align: left;
 }
 
-/* Fixes inconsistent default bolding for `thead` and `tfoot`. */
-.wp-block-table thead,
-.wp-block-table tfoot {
-	font-weight: 700;
-}
+/* Less prominent bold for headers. */
+.wp-block-table th,
+.wp-block-table tfoot { font-weight: 500; }
 
 /**
  * `theme.json` border support for tables is horribly broken, so we're just
@@ -24,4 +22,13 @@
 .wp-block-table tr th,
 .wp-block-table tr td {
 	border-color: inherit;
+}
+
+/* Styling via `theme.json` appends to the table instead of the wrapper. */
+.wp-block-table.is-style-stripes {
+	border: none;
+}
+
+.wp-block-table.is-style-stripes tbody tr:nth-child( odd ) {
+	background-color: var( --wp--preset--color--neutral-100 );
 }

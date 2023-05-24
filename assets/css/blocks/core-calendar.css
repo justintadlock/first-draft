@@ -14,3 +14,9 @@
 .wp-block-calendar th {
 	padding: var( --wp--preset--spacing--30 ) var( --wp--preset--spacing--10 );
 }
+
+.wp-calendar-nav {
+	display: flex;
+	justify-content: space-between;
+	margin: var( --wp--preset--spacing--10 ) var( --wp--preset--spacing--40 ) 0;
+}

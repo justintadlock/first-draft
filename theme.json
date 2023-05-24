@@ -129,32 +129,32 @@
 				{
 					"name": "Small",
 					"slug": "sm",
-					"shadow": "0 1px 3px 0 rgb( 0 0 0 / 0.1 ), 0 1px 2px -1px rgb( 0 0 0 / 0.1 )"
+					"shadow": "0 1px 3px 0 rgba( 0, 0, 0, 0.3 )"
 				},
 				{
 					"name": "Medium",
 					"slug": "md",
-					"shadow": "0 4px 6px -1px rgb( 0 0 0 / 0.1 ), 0 2px 4px -2px rgb( 0 0 0 / 0.1 )"
+					"shadow": "0 2px 5px 0 rgba( 0, 0, 0, 0.3 )"
 				},
 				{
 					"name": "Large",
 					"slug": "lg",
-					"shadow": "0 10px 15px -3px rgb( 0 0 0 / 0.1 ), 0 4px 6px -4px rgb( 0 0 0 / 0.1 )"
+					"shadow": "0 4px 10px 0 rgba( 0, 0, 0, 0.3 )"
 				},
 				{
 					"name": "XL",
 					"slug": "xl",
-					"shadow": "0 20px 25px -5px rgb( 0 0 0 / 0.1 ), 0 8px 10px -6px rgb( 0 0 0 / 0.1 )"
+					"shadow": "0 8px 15px 0 rgba( 0, 0, 0, 0.3 )"
 				},
 				{
 					"name": "2XL",
 					"slug": "2-xl",
-					"shadow": "0 25px 50px -12px rgb( 0 0 0 / 0.25 )"
+					"shadow": "0 12px 20px 0 rgba( 0, 0, 0, 0.3 )"
 				},
 				{
 					"name": "Inner",
 					"slug": "inner",
-					"shadow": "inset 0 2px 4px 0 rgb( 0 0 0 / 0.05 )"
+					"shadow": "inset 0 2px 4px 0 rgba( 0, 0, 0, 0.06 )"
 				}
 			]
 		},
@@ -388,7 +388,7 @@
 						"background": "var( --wp--preset--color--primary-800 )"
 					},
 					"typography": {
-						"textDecoration": "underline"
+						"textDecoration": "solid underline 0.0625em"
 					}
 				},
 				":hover": {
@@ -396,13 +396,21 @@
 						"background": "var( --wp--preset--color--primary-800 )"
 					},
 					"typography": {
-						"textDecoration": "underline"
+						"textDecoration": "solid underline 0.0625em"
 					}
 				}
 			},
 			"caption": {
 				"color": {
 					"text": "var( --wp--preset--color--neutral-700 )"
+				},
+				"spacing": {
+					"margin": {
+						"top": "var( --wp--preset--spacing--20 )",
+						"bottom": "0",
+						"left": "var( --wp--preset--spacing--40 )",
+						"right": "var( --wp--preset--spacing--40 )"
+					}
 				},
 				"typography": {
 					"fontSize": "var( --wp--preset--font-size--lg )",
@@ -414,8 +422,10 @@
 					"text": "var( --wp--preset--color--neutral-700 )"
 				},
 				"typography": {
-					"fontSize": "0.9375em",
-					"fontStyle": "normal"
+					"fontSize": "0.875em",
+					"fontStyle": "normal",
+					"fontWeight": "300",
+					"textTransform": "uppercase"
 				}
 			},
 			"heading": {
@@ -464,14 +474,23 @@
                                 "color": {
                                         "text": "var( --wp--preset--color--primary-600 )"
                                 },
+				"typography": {
+					"textDecoration": "solid underline 0.0625em"
+				},
 				":focus": {
 					"color": {
 						"text": "var( --wp--preset--color--primary-800 )"
+					},
+					"typography": {
+						"textDecoration": "solid underline 0.0625em"
 					}
 				},
 				":hover": {
 					"color": {
 						"text": "var( --wp--preset--color--primary-800 )"
+					},
+					"typography": {
+						"textDecoration": "solid underline 0.0625em"
 					}
 				}
                         }
@@ -557,7 +576,7 @@
 				"css": "--wp--style--gallery-gap-default: var( --wp--preset--spacing--40 );"
 			},
 			"core/image": {
-				"css": "& img {\n\tbox-shadow: var( --wp--preset--shadow--sm );\n}"
+				"css": "& img {\n\tbox-shadow: var( --wp--preset--shadow--md );\n}"
 			},
 			"core/latest-comments": {
 				"spacing": {
@@ -568,7 +587,7 @@
 				}
 			},
 			"core/post-featured-image": {
-				"css": "& img {\n\tbox-shadow: var( --wp--preset--shadow--sm );\n}"
+				"css": "& img {\n\tbox-shadow: var( --wp--preset--shadow--md );\n}"
 			},
 			"core/navigation": {
 				"spacing": {
@@ -649,16 +668,6 @@
 						},
 						"typography": {
 							"textDecoration": "none"
-						},
-						":focus": {
-							"typography": {
-								"textDecoration": "underline"
-							}
-						},
-						":hover": {
-							"typography": {
-								"textDecoration": "underline"
-							}
 						}
 					}
 				}
@@ -679,16 +688,6 @@
 					"link": {
 						"typography": {
 							"textDecoration": "none"
-						},
-						":focus": {
-							"typography": {
-								"textDecoration": "underline"
-							}
-						},
-						":hover": {
-							"typography": {
-								"textDecoration": "underline"
-							}
 						}
 					}
 				}

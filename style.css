@@ -15,10 +15,46 @@
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  */
 
+/* Inline elements */
+a,
+input:focus,
+textarea:focus,
+.wp-element-button {
+	transition: all 0.5s ease-in-out;
+}
+
+a,
+.wp-element-button {
+	text-underline-offset: 0.0625em;
+}
+
+:where( :not( pre ) > code ) {
+	padding: 0.125em 0.25em;
+	font-size: 0.8125em;
+	font-weight: 600;
+	background: var( --wp--preset--color--neutral-100 );
+}
+
+kbd {
+	padding: 0.125em 0.25em;
+	font-size: 0.8125em;
+	background: var( --wp--preset--color--neutral-100 );
+	border: 1px solid var( --wp--preset--color--neutral-300 );
+	border-radius: 0.25rem;
+}
+
+mark {
+	padding: 0.25em;
+}
+
+s {
+	color: var( --wp--preset--color--neutral-400 );
+	text-decoration: line-through solid var( --wp--preset--color--primary-700 ) 0.0625em;
+}
+
 /**
- * WP has no way to tie a line-height to a font-size. This code combines line
- * heights that are set via `settings.custom.lineHeight` in `theme.json` with
- * the corresponding font-size set via `setting.typography.fontSizes`.
+ * Combine each line-height set via `settings.custom.lineHeight` in `theme.json`
+ * with the corresponding font-size set via `setting.typography.fontSizes`.
  */
 .has-5-xl-font-size { line-height: var( --wp--custom--line-height--5-xl ); }
 .has-4-xl-font-size { line-height: var( --wp--custom--line-height--4-xl ); }

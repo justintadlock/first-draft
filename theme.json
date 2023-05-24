@@ -532,9 +532,6 @@
 					"textDecoration": "solid underline 0.0625em"
 				},
 				":focus": {
-					"color": {
-						"text": "var( --wp--preset--color--primary-800 )"
-					},
 					"typography": {
 						"textDecoration": "solid underline 0.0625em"
 					}

@@ -16,11 +16,16 @@
  */
 
 /* Inline elements. */
-a,
+:where( :not( a:focus ) ),
 input:focus,
 textarea:focus,
 .wp-element-button {
 	transition: all 0.5s ease-in-out;
+}
+
+:where( a:not( .wp-element-button ):focus ) {
+	outline: 1px solid currentColor;
+	outline-offset: 0.0625em;
 }
 
 a,

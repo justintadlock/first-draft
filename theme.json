@@ -737,6 +737,9 @@
 					"fontSize": "var( --wp--preset--font-size--lg )",
 					"lineHeight": "var( --wp--custom--line-height--lg )"
 				}
+			},
+			"core/table-of-contents": {
+				"css": "& ol {\n\tlist-style: disc;\n}"
 			}
 		}
         },

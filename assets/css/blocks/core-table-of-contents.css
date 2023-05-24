@@ -1,0 +1,4 @@
+/* Tighten spacing between list elements. */
+.wp-block-table-of-contents ol :where( li + li, li > ol ) {
+	margin-block-start: revert;
+}

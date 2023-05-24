@@ -14,18 +14,15 @@
 .wp-block-social-links.has-huge-icon-size {
         font-size: var( --wp--preset--font-size--3-xl );
 }
-.wp-block-social-links.has-small-icon-size .wp-block-social-link-label:not( .screen-reader-text ) {
-	font-size: var( --wp--preset--font-size--sm );
-}
 
-.wp-block-social-links.has-normal-icon-size .wp-block-social-link-label:not( .screen-reader-text ) {
+.wp-block-social-links.has-small-icon-size .wp-block-social-link-label:not( .screen-reader-text ) {
 	font-size: var( --wp--preset--font-size--md );
 }
 
-.wp-block-social-links.has-large-icon-size .wp-block-social-link-label:not( .screen-reader-text ) {
+.wp-block-social-links.has-normal-icon-size .wp-block-social-link-label:not( .screen-reader-text ) {
 	font-size: var( --wp--preset--font-size--lg );
 }
 
-.wp-block-social-links.has-huge-icon-size .wp-block-social-link-label:not( .screen-reader-text ) {
+.wp-block-social-links:is( .has-large-icon-size, .has-huge-icon-size ) .wp-block-social-link-label:not( .screen-reader-text ) {
 	font-size: var( --wp--preset--font-size--xl );
 }

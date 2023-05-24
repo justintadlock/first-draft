@@ -4,6 +4,11 @@
 	padding: 0;
 }
 
+/* Add default padding when the block has a background. */
+.wp-block-pullquote.has-background {
+	padding: var( --wp--style--block-gap );
+}
+
 /* Cite doesn't have a standalone block-level wrapper. */
 .wp-block-pullquote cite {
 	display: block;

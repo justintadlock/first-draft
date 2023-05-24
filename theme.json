@@ -542,6 +542,20 @@
 					"lineHeight": "var( --wp--preset--line-height--md )"
 				}
 			},
+			"core/cover": {
+				"color": {
+					"text": "var( --wp--preset--color--white )"
+				},
+				"elements": {
+					"link": {
+						":any-link": {
+							"color": {
+								"text": "inherit"
+							}
+						}
+					}
+				}
+			},
 			"core/details": {
 				"border": {
 					"color": "var( --wp--preset--color--neutral-300 )",

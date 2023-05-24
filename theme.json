@@ -10,10 +10,59 @@
                 },
                 "color": {
                         "custom": true,
-                        "defaultGradients": true,
-                        "defaultPalette": true,
-			"gradients": [],
+			"defaultDuotone": false,
+                        "defaultGradients": false,
+                        "defaultPalette": false,
                         "link": true,
+			"duotone": [
+				{
+					"name": "Grayscale",
+					"slug": "grayscale",
+					"colors": [ "#000000", "#ffffff" ]
+				},
+				{
+					"name": "Dark Grayscale",
+					"slug": "dark-grayscale",
+					"colors": [ "#000000", "#7f7f7f" ]
+				},
+				{
+					"name": "Primary",
+					"slug": "primary",
+					"colors": [ "#0c4a6e", "#e0f2fe" ]
+				},
+				{
+					"name": "Primary and White",
+					"slug": "primary-white",
+					"colors": [ "#0c4a6e", "#ffffff" ]
+				}
+			],
+			"gradients": [
+				{
+					"gradient": "linear-gradient( 90deg, var( --wp--preset--color--primary-500 ) 0%, var( --wp--preset--color--primary-700 ) 100% )",
+					"name": "Linear: 90 degrees (Primary)",
+					"slug": "90-deg-primary"
+				},
+				{
+					"gradient": "linear-gradient( 180deg, var( --wp--preset--color--primary-500 ) 0%, var( --wp--preset--color--primary-700 ) 100% )",
+					"name": "Linear: 180 degrees (Primary)",
+					"slug": "180-deg-primary"
+				},
+				{
+					"gradient": "linear-gradient( 270deg, var( --wp--preset--color--primary-500 ) 0%, var( --wp--preset--color--primary-700 ) 100% )",
+					"name": "Linear: 270 degrees (Primary)",
+					"slug": "270-deg-primary"
+				},
+				{
+					"gradient": "linear-gradient( 360deg, var( --wp--preset--color--primary-500 ) 0%, var( --wp--preset--color--primary-700 ) 100% )",
+					"name": "Linear: 360 degrees (Primary)",
+					"slug": "360-deg-primary"
+				},
+				{
+					"gradient": "radial-gradient( var( --wp--preset--color--primary-500 ), var( --wp--preset--color--primary-700 ) )",
+					"name": "Radial (Primary)",
+					"slug": "radial-primary"
+				}
+			],
                         "palette": [
                                 {
                                         "slug": "neutral-900",

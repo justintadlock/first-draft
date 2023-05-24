@@ -12,7 +12,7 @@
                         "custom": true,
 			"defaultDuotone": false,
                         "defaultGradients": false,
-                        "defaultPalette": false,
+                        "defaultPalette": true,
                         "link": true,
 			"duotone": [
 				{

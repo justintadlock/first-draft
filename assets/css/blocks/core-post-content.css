@@ -1,9 +1,9 @@
 /* Add fluid spacing to list padding. */
-.wp-block-post-content :where( ul, ol ) {
+:where( .wp-block-post-content :where( ul, ol ) ) {
 	padding-inline-start: var( --wp--preset--spacing--120 );
 }
 
 /* Loosen the spacing between elements in a list. */
-.wp-block-post-content :where( li + li, li > ul, li > ol ) {
+:where( .wp-block-post-content :where( li + li, li > ul, li > ol ) ) {
 	margin-block-start: var( --wp--preset--spacing--20 );
 }

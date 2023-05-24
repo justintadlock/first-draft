@@ -38,6 +38,11 @@
 			],
 			"gradients": [
 				{
+					"gradient": "linear-gradient( 0deg, var( --wp--preset--color--primary-500 ) 0%, var( --wp--preset--color--primary-700 ) 100% )",
+					"name": "Linear: 0 degrees (Primary)",
+					"slug": "0-deg-primary"
+				},
+				{
 					"gradient": "linear-gradient( 90deg, var( --wp--preset--color--primary-500 ) 0%, var( --wp--preset--color--primary-700 ) 100% )",
 					"name": "Linear: 90 degrees (Primary)",
 					"slug": "90-deg-primary"

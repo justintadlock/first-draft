@@ -338,47 +338,47 @@
                         ],
 			"fontSizes": [
 				{
-					"name": "XS",
+					"name": "Extra Small - Fixed",
 					"size": "0.875rem",
 					"slug": "xs"
 				},
 				{
-					"name": "Small",
+					"name": "Small - Fixed",
 					"size": "0.9375rem",
 					"slug": "sm"
 				},
 				{
-					"name": "Medium",
+					"name": "Medium - Fixed",
 					"size": "1rem",
 					"slug": "md"
 				},
 				{
-					"name": "Large",
+					"name": "Large - Fluid",
 					"size": "clamp( 1.0625rem, 0.625vw + 0.85rem, 1.125rem )",
 					"slug": "lg"
 				},
 				{
-					"name": "XL",
+					"name": "Extra Large - Fluid",
 					"size": "clamp( 1.125rem, 1.25vw + 0.7rem, 1.25rem )",
 					"slug": "xl"
 				},
 				{
-					"name": "2XL",
+					"name": "2XL - Fluid",
 					"size": "clamp( 1.25rem, 2.5vw + 0.4rem, 1.5rem )",
 					"slug": "2-xl"
 				},
 				{
-					"name": "3XL",
+					"name": "3XL - Fluid",
 					"size": "clamp( 1.5rem, 3.75vw + 0.225rem, 1.875rem )",
 					"slug": "3-xl"
 				},
 				{
-					"name": "4XL",
+					"name": "4XL - Fluid",
 					"size": "clamp( 1.75rem, 5vw + 0.05rem, 2.25rem )",
 					"slug": "4-xl"
 				},
 				{
-					"name": "5XL",
+					"name": "5XL - Fluid",
 					"size": "clamp( 2rem, 5.55556vw + 0.11111rem, 3rem )",
 					"slug": "5-xl"
 				}

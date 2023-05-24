@@ -16,7 +16,7 @@
  */
 
 /* Inline elements. */
-:where( :not( a:focus ) ),
+a:where( :not( :focus ) ),
 input:focus,
 textarea:focus,
 .wp-element-button {

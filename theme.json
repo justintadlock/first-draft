@@ -673,8 +673,25 @@
 				}
 			},
 			"core/separator": {
+				"border": {
+					"top": {
+						"width": "1px"
+					},
+					"bottom": {
+						"width": "0"
+					}
+				},
 				"color": {
 					"text": "var( --wp--preset--color--neutral-300 )"
+				},
+				"variations": {
+					"wide": {
+						"border": {
+							"top": {
+								"width": "4px"
+							}
+						}
+					}
 				}
 			},
 			"core/site-title": {

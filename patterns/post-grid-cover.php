@@ -12,8 +12,8 @@
 <!-- wp:query {"queryId":0,"query":{"perPage":"6","pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"displayLayout":{"type":"flex","columns":3},"align":"full","layout":{"type":"constrained"}} -->
 <div class="wp-block-query alignfull">
 
-	<!-- wp:group {"align":"full","layout":{"type":"default"}} -->
-	<div class="wp-block-group alignfull">
+	<!-- wp:group {"align":"full","backgroundColor":"black","layout":{"type":"default"}} -->
+	<div class="wp-block-group alignfull has-black-background-color has-background">
 
 		<!-- wp:post-template {"className":"is-style-no-gap is-style-flex-grow"} -->
 

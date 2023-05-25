@@ -166,12 +166,12 @@
 				"xs": "1.25rem",
 				"sm": "1.5rem",
 				"md": "1.5rem",
-				"lg": "clamp( 1.75rem, 2.1875vw + 1.00625rem, 1.96875rem )",
+				"lg": "clamp( 1.75rem, 2.1875cqi + 1.00625rem, 1.96875rem )",
 				"xl": "1.75",
-				"2-xl": "clamp( 2.1875rem, -1.875vw + 2.825rem, 2rem )",
-				"3-xl": "clamp( 2rem,2.5vw + 1.15rem, 2.25rem )",
-				"4-xl": "clamp( 2.125rem, 4.0625vw + 0.74375rem, 2.53125rem )",
-				"5-xl": "clamp( 2.25rem, 5.55556vw + 0.36111rem, 3.25rem )"
+				"2-xl": "clamp( 2.1875rem, -1.875cqi + 2.825rem, 2rem )",
+				"3-xl": "clamp( 2rem,2.5cqi + 1.15rem, 2.25rem )",
+				"4-xl": "clamp( 2.125rem, 4.0625cqi + 0.74375rem, 2.53125rem )",
+				"5-xl": "clamp( 2.25rem, 5.55556cqi + 0.36111rem, 3.25rem )"
 			}
 		},
                 "layout": {

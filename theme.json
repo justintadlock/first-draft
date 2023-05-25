@@ -359,32 +359,32 @@
 				},
 				{
 					"name": "Large - Fluid",
-					"size": "clamp( 1.0625rem, 0.625vw + 0.85rem, 1.125rem )",
+					"size": "clamp( 1.0625rem, 0.625cqi + 0.85rem, 1.125rem )",
 					"slug": "lg"
 				},
 				{
 					"name": "Extra Large - Fluid",
-					"size": "clamp( 1.125rem, 1.25vw + 0.7rem, 1.25rem )",
+					"size": "clamp( 1.125rem, 1.25cqi + 0.7rem, 1.25rem )",
 					"slug": "xl"
 				},
 				{
 					"name": "2XL - Fluid",
-					"size": "clamp( 1.25rem, 2.5vw + 0.4rem, 1.5rem )",
+					"size": "clamp( 1.25rem, 2.5cqi + 0.4rem, 1.5rem )",
 					"slug": "2-xl"
 				},
 				{
 					"name": "3XL - Fluid",
-					"size": "clamp( 1.5rem, 3.75vw + 0.225rem, 1.875rem )",
+					"size": "clamp( 1.5rem, 3.75cqi + 0.225rem, 1.875rem )",
 					"slug": "3-xl"
 				},
 				{
 					"name": "4XL - Fluid",
-					"size": "clamp( 1.75rem, 5vw + 0.05rem, 2.25rem )",
+					"size": "clamp( 1.75rem, 5cqi + 0.05rem, 2.25rem )",
 					"slug": "4-xl"
 				},
 				{
 					"name": "5XL - Fluid",
-					"size": "clamp( 2rem, 5.55556vw + 0.11111rem, 3rem )",
+					"size": "clamp( 2rem, 5.55556cqi + 0.11111rem, 3rem )",
 					"slug": "5-xl"
 				}
 			],

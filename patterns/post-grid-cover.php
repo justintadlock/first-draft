@@ -15,7 +15,7 @@
 	<!-- wp:group {"align":"full","layout":{"type":"default"}} -->
 	<div class="wp-block-group alignfull">
 
-		<!-- wp:post-template {"className":"is-style-no-gap"} -->
+		<!-- wp:post-template {"className":"is-style-no-gap is-style-flex-grow"} -->
 
 			<!-- wp:group {"tagName":"article","layout":{"type":"constrained"}} -->
 			<article class="wp-block-group">

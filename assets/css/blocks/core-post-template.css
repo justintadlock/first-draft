@@ -29,3 +29,13 @@
 		width: calc( 100% / 6 );
 	}
 }
+
+/* Set a query container for flex query loops. */
+.wp-block-post-template.is-flex-container > .wp-block-post {
+	container-type: inline-size;
+}
+
+/* Utility class for filling out the container with unequal columns per row. */
+.wp-block-post-template.is-style-flex-grow > .wp-block-post {
+	flex-grow: 1;
+}

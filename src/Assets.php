@@ -38,10 +38,10 @@ class Assets
 	 */
         public function addEditorStyles(): void
 	{
-                add_editor_style( [
+		add_editor_style( [
 			get_parent_theme_file_uri( 'style.css' )
-                ] );
-        }
+		] );
+	}
 
         /**
 	 * Enqueue scripts/styles for the front end.
@@ -51,13 +51,13 @@ class Assets
         public function enqueueAssets(): void
 	{
 		// Loads the primary `style.css` file.
-                wp_enqueue_style(
+		wp_enqueue_style(
 			'first-draft-style',
 			get_parent_theme_file_uri( 'style.css' ),
 			null,
 			filemtime( get_parent_theme_file_path( 'style.css' ) )
 		);
-        }
+	}
 
 	/**
          * Enqueues block-specific styles so that they only load when the block
@@ -71,15 +71,15 @@ class Assets
         public function enqueueBlockStyles(): void
 	{
 		// Gets all the block stylesheets.
-                $files = glob( get_parent_theme_file_path( 'assets/css/blocks/*.css' ) );
+		$files = glob( get_parent_theme_file_path( 'assets/css/blocks/*.css' ) );
 
-                foreach ( $files as $file ) {
+		foreach ( $files as $file ) {
 
 			// Gets the filename without the path or extension.
-                        $name = str_replace( [
-                                get_parent_theme_file_path( 'assets/css/blocks/' ),
-                                '.css'
-                        ], '', $file );
+			$name = str_replace( [
+				get_parent_theme_file_path( 'assets/css/blocks/' ),
+				'.css'
+			], '', $file );
 
 			// Sanitize the name to make sure it contains only
 			// characters allowed in a block type name.
@@ -99,12 +99,12 @@ class Assets
 			$block = substr_replace( $name, '/', $pos, 1 );
 
 			// Register the block style.
-                        wp_enqueue_block_style( $block, [
-                                'handle' => "first-draft-block-{$name}",
+			wp_enqueue_block_style( $block, [
+				'handle' => "first-draft-block-{$name}",
 				'src'    => get_parent_theme_file_uri( "assets/css/blocks/{$name}.css" ),
-                                'path'   => get_parent_theme_file_path( "assets/css/blocks/{$name}.css" ),
+				'path'   => get_parent_theme_file_path( "assets/css/blocks/{$name}.css" ),
 				'ver'    => filemtime( get_parent_theme_file_path( "assets/css/blocks/{$name}.css" ) )
-                        ] );
-                }
-        }
+			] );
+		}
+	}
 }

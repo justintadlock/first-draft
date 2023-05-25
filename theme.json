@@ -1,19 +1,19 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
-        "version": 2,
-        "settings": {
-                "border": {
-                        "color": true,
-                        "radius": true,
-                        "style": true,
-                        "width": true
-                },
-                "color": {
-                        "custom": true,
+	"version": 2,
+	"settings": {
+		"border": {
+			"color": true,
+			"radius": true,
+			"style": true,
+			"width": true
+		},
+		"color": {
+			"custom": true,
 			"defaultDuotone": false,
-                        "defaultGradients": false,
-                        "defaultPalette": true,
-                        "link": true,
+			"defaultGradients": false,
+			"defaultPalette": true,
+			"link": true,
 			"duotone": [
 				{
 					"name": "Grayscale",
@@ -68,99 +68,99 @@
 					"slug": "radial-primary"
 				}
 			],
-                        "palette": [
-                                {
-                                        "slug": "neutral-900",
-                                        "color": "#0f172a",
-                                        "name": "Neutral: 900"
-                                },
-                                {
-                                        "slug": "neutral-800",
-                                        "color": "#1e293b",
-                                        "name": "Neutral: 800"
-                                },
-                                {
-                                        "slug": "neutral-700",
-                                        "color": "#334155",
-                                        "name": "Neutral: 700"
-                                },
-                                {
-                                        "slug": "neutral-600",
-                                        "color": "#475569",
-                                        "name": "Neutral: 600"
-                                },
-                                {
-                                        "slug": "neutral-500",
-                                        "color": "#64748b",
-                                        "name": "Neutral: 500"
-                                },
-                                {
-                                        "slug": "neutral-400",
-                                        "color": "#94a3b8",
-                                        "name": "Neutral: 400"
-                                },
-                                {
-                                        "slug": "neutral-300",
-                                        "color": "#cbd5e1",
-                                        "name": "Neutral: 300"
-                                },
-                                {
-                                        "slug": "neutral-200",
-                                        "color": "#e2e8f0",
-                                        "name": "Neutral: 200"
-                                },
-                                {
-                                        "slug": "neutral-100",
-                                        "color": "#f1f5f9",
-                                        "name": "Neutral: 100"
-                                },
-                                {
-                                        "slug": "primary-900",
-                                        "color": "#0c4a6e",
-                                        "name": "Primary: 900"
-                                },
-                                {
-                                        "slug": "primary-800",
-                                        "color": "#075985",
-                                        "name": "Primary: 800"
-                                },
-                                {
-                                        "slug": "primary-700",
-                                        "color": "#0369a1",
-                                        "name": "Primary: 700"
-                                },
-                                {
-                                        "slug": "primary-600",
-                                        "color": "#0284c7",
-                                        "name": "Primary: 600"
-                                },
-                                {
-                                        "slug": "primary-500",
-                                        "color": "#0ea5e9",
-                                        "name": "Primary: 500"
-                                },
-                                {
-                                        "slug": "primary-400",
-                                        "color": "#38bdf8",
-                                        "name": "Primary: 400"
-                                },
-                                {
-                                        "slug": "primary-300",
-                                        "color": "#7dd3fc",
-                                        "name": "Primary: 300"
-                                },
-                                {
-                                        "slug": "primary-200",
-                                        "color": "#bae6fd",
-                                        "name": "Primary: 200"
-                                },
-                                {
-                                        "slug": "primary-100",
-                                        "color": "#e0f2fe",
-                                        "name": "Primary: 100"
-                                }
-                        ]
-                },
+			"palette": [
+				{
+					"slug": "neutral-900",
+					"color": "#0f172a",
+					"name": "Neutral: 900"
+				},
+				{
+					"slug": "neutral-800",
+					"color": "#1e293b",
+					"name": "Neutral: 800"
+				},
+				{
+					"slug": "neutral-700",
+					"color": "#334155",
+					"name": "Neutral: 700"
+				},
+				{
+					"slug": "neutral-600",
+					"color": "#475569",
+					"name": "Neutral: 600"
+				},
+				{
+					"slug": "neutral-500",
+					"color": "#64748b",
+					"name": "Neutral: 500"
+				},
+				{
+					"slug": "neutral-400",
+					"color": "#94a3b8",
+					"name": "Neutral: 400"
+				},
+				{
+					"slug": "neutral-300",
+					"color": "#cbd5e1",
+					"name": "Neutral: 300"
+				},
+				{
+					"slug": "neutral-200",
+					"color": "#e2e8f0",
+					"name": "Neutral: 200"
+				},
+				{
+					"slug": "neutral-100",
+					"color": "#f1f5f9",
+					"name": "Neutral: 100"
+				},
+				{
+					"slug": "primary-900",
+					"color": "#0c4a6e",
+					"name": "Primary: 900"
+				},
+				{
+					"slug": "primary-800",
+					"color": "#075985",
+					"name": "Primary: 800"
+				},
+				{
+					"slug": "primary-700",
+					"color": "#0369a1",
+					"name": "Primary: 700"
+				},
+				{
+					"slug": "primary-600",
+					"color": "#0284c7",
+					"name": "Primary: 600"
+				},
+				{
+					"slug": "primary-500",
+					"color": "#0ea5e9",
+					"name": "Primary: 500"
+				},
+				{
+					"slug": "primary-400",
+					"color": "#38bdf8",
+					"name": "Primary: 400"
+				},
+				{
+					"slug": "primary-300",
+					"color": "#7dd3fc",
+					"name": "Primary: 300"
+				},
+				{
+					"slug": "primary-200",
+					"color": "#bae6fd",
+					"name": "Primary: 200"
+				},
+				{
+					"slug": "primary-100",
+					"color": "#e0f2fe",
+					"name": "Primary: 100"
+				}
+			]
+		},
 		"custom": {
 			"lineHeight": {
 				"xs": "1.25rem",
@@ -174,10 +174,10 @@
 				"5-xl": "clamp( 2.25rem, 5.55556cqi + 0.36111rem, 3.25rem )"
 			}
 		},
-                "layout": {
-                        "contentSize": "40rem",
-                        "wideSize": "64rem"
-                },
+		"layout": {
+			"contentSize": "40rem",
+			"wideSize": "64rem"
+		},
 		"shadow": {
 			"presets": [
 				{
@@ -212,11 +212,11 @@
 				}
 			]
 		},
-                "spacing": {
-                        "blockGap": true,
+		"spacing": {
+			"blockGap": true,
 			"customSpacingSize": true,
-                        "margin": true,
-                        "padding": true,
+			"margin": true,
+			"padding": true,
 			"spacingSizes": [
 				{
 					"name": "Pixel - Fixed (1px)",
@@ -294,16 +294,16 @@
 					"slug": "320"
 				}
 			],
-                        "units": [ "rem", "em", "%", "vh", "vw", "px" ]
-                },
-                "typography": {
-                        "customFontSize": false,
-                        "dropCap": true,
-                        "fontFamilies": [
-                                {
-                                        "fontFamily": "Oswald, ui-sans-serif, sans-serif",
-                                        "slug": "primary",
-                                        "name": "Primary (Oswald)",
+			"units": [ "rem", "em", "%", "vh", "vw", "px" ]
+		},
+		"typography": {
+			"customFontSize": false,
+			"dropCap": true,
+			"fontFamilies": [
+				{
+					"fontFamily": "Oswald, ui-sans-serif, sans-serif",
+					"slug": "primary",
+					"name": "Primary (Oswald)",
 					"fontFace": [
 						{
 							"fontFamily": "Oswald",
@@ -313,11 +313,11 @@
 							"src": [ "file:./assets/fonts/oswald/oswald.woff2" ]
 						}
 					]
-                                },
-                                {
-                                        "fontFamily": "Karla, ui-sans-serif, sans-serif",
-                                        "slug": "secondary",
-                                        "name": "Secondary (Karla)",
+				},
+				{
+					"fontFamily": "Karla, ui-sans-serif, sans-serif",
+					"slug": "secondary",
+					"name": "Secondary (Karla)",
 					"fontFace": [
 						{
 							"fontFamily": "Karla",
@@ -334,13 +334,13 @@
 							"src": [ "file:./assets/fonts/karla/karla-italic.woff2" ]
 						}
 					]
-                                },
-                                {
-                                        "fontFamily": "\"Source Code Pro\", Monaco, Consolas, \"Andale Mono WT\", \"Andale Mono\", \"Lucida Console\", \"Lucida Sans Typewriter\", \"DejaVu Sans Mono\", \"Bitstream Vera Sans Mono\", \"Liberation Mono\", \"Nimbus Mono L\", \"Courier New\", Courier, monospace",
-                                        "slug": "mono",
-                                        "name": "Monospace"
-                                }
-                        ],
+				},
+				{
+					"fontFamily": "\"Source Code Pro\", Monaco, Consolas, \"Andale Mono WT\", \"Andale Mono\", \"Lucida Console\", \"Lucida Sans Typewriter\", \"DejaVu Sans Mono\", \"Bitstream Vera Sans Mono\", \"Liberation Mono\", \"Nimbus Mono L\", \"Courier New\", Courier, monospace",
+					"slug": "mono",
+					"name": "Monospace"
+				}
+			],
 			"fontSizes": [
 				{
 					"name": "Extra Small - Fixed",
@@ -388,35 +388,35 @@
 					"slug": "5-xl"
 				}
 			],
-                        "fontStyle": true,
-                        "fontWeight": true,
-                        "letterSpacing": true,
-                        "lineHeight": false,
-                        "textDecoration": true,
-                        "textTransform": true
-                },
+			"fontStyle": true,
+			"fontWeight": true,
+			"letterSpacing": true,
+			"lineHeight": false,
+			"textDecoration": true,
+			"textTransform": true
+		},
 		"useRootPaddingAwareAlignments": true
-        },
-        "styles": {
-                "color": {
-                        "text": "var( --wp--preset--color--neutral-900 )",
-                        "background": "var( --wp--preset--color--white )"
-                },
-                "spacing": {
-                        "blockGap": "2rem",
-                        "padding": {
+	},
+	"styles": {
+		"color": {
+			"text": "var( --wp--preset--color--neutral-900 )",
+			"background": "var( --wp--preset--color--white )"
+		},
+		"spacing": {
+			"blockGap": "2rem",
+			"padding": {
 				"top": "0",
 				"bottom": "0",
 				"left": "2rem",
 				"right": "2rem"
 			}
-                },
-                "typography": {
-                        "fontFamily": "var( --wp--preset--font-family--secondary )",
-                        "fontSize": "var( --wp--preset--font-size--xl )",
-                        "lineHeight": "var( --wp--custom--line-height--xl )"
-                },
-                "elements": {
+		},
+		"typography": {
+			"fontFamily": "var( --wp--preset--font-family--secondary )",
+			"fontSize": "var( --wp--preset--font-size--xl )",
+			"lineHeight": "var( --wp--custom--line-height--xl )"
+		},
+		"elements": {
 			"button": {
 				"border": {
 					"radius": "0"
@@ -524,10 +524,10 @@
 					"lineHeight": "var( --wp--custom--line-height--lg )"
 				}
 			},
-                        "link": {
-                                "color": {
-                                        "text": "var( --wp--preset--color--primary-700 )"
-                                },
+			"link": {
+				"color": {
+					"text": "var( --wp--preset--color--primary-700 )"
+				},
 				"typography": {
 					"textDecoration": "solid underline 0.0625em"
 				},
@@ -544,7 +544,7 @@
 						"textDecoration": "solid underline 0.0625em"
 					}
 				}
-                        }
+			}
 		},
 		"blocks": {
 			"core/avatar": {
@@ -800,7 +800,7 @@
 				"css": "& ol {\n\tlist-style: disc;\n}"
 			}
 		}
-        },
+	},
 	"customTemplates": [
 		{
 			"name": "template-canvas",

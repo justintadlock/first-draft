@@ -38,4 +38,17 @@
 /* Utility class for filling out the container with unequal columns per row. */
 .wp-block-post-template.is-style-flex-grow > .wp-block-post {
 	flex-grow: 1;
+	min-width: 18rem;
+}
+
+@media ( min-width: 64rem ) {
+	.wp-block-post-template.is-style-flex-grow.columns-4 > .wp-block-post {
+		min-width: 16rem;
+	}
+	.wp-block-post-template.is-style-flex-grow.columns-5 > .wp-block-post {
+		min-width: 14rem;
+	}
+	.wp-block-post-template.is-style-flex-grow.columns-6 > .wp-block-post {
+		min-width: 12rem;
+	}
 }

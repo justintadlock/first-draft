@@ -711,6 +711,13 @@
 					"lineHeight": "var( --wp--custom--line-height--md )"
 				}
 			},
+			"core/query-pagination": {
+				"spacing": {
+					"padding": {
+						"bottom": "var( --wp--style--block-gap )"
+					}
+				}
+			},
 			"core/quote": {
 				"border": {
 					"left": {

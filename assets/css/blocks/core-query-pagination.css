@@ -10,3 +10,10 @@
 .wp-block-query-pagination > [class*=wp-block-query-pagination-] {
 	margin: 0;
 }
+
+/* No dimensions or inner blocks layout width support for the block yet. */
+.has-global-padding > .alignfull > .wp-block-query-pagination {
+	box-sizing: content-box;
+	padding-right: var(--wp--style--root--padding-right);
+	padding-left: var(--wp--style--root--padding-left);
+}

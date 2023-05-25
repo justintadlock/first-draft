@@ -801,7 +801,13 @@
 			}
 		}
         },
-	"customTemplates": [],
+	"customTemplates": [
+		{
+			"name": "template-canvas",
+			"title": "Custom: Canvas",
+			"postTypes": [ "page", "post" ]
+		}
+	],
 	"templateParts": [
 		{
 			"area": "header",

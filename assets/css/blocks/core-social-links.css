@@ -1,3 +1,12 @@
+/* Padding adjustments. */
+.wp-block-social-links .wp-social-link .wp-block-social-link-anchor {
+	padding: var( --wp--preset--spacing--20 );
+}
+
+.wp-block-social-links.is-style-pill-shape .wp-social-link .wp-block-social-link-anchor {
+	padding: var( --wp--preset--spacing--20 ) var( --wp--preset--spacing--40 );
+}
+
 /* Font-size fixes to match the theme. */
 .wp-block-social-links.has-small-icon-size {
         font-size: var( --wp--preset--font-size--lg );

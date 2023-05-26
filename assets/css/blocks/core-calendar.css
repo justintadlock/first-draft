@@ -13,8 +13,17 @@
 	padding: var( --wp--preset--spacing--30 ) var( --wp--preset--spacing--10 );
 }
 
+:where( .wp-block-calendar caption ) {
+	margin: 0 var( --wp--preset--spacing--40 ) var( --wp--preset--spacing--20 );
+}
+
 .wp-calendar-nav {
 	display: flex;
 	justify-content: space-between;
 	margin: var( --wp--preset--spacing--10 ) var( --wp--preset--spacing--40 ) 0;
+}
+
+
+.wp-block-calendar th {
+	font-weight: 600;
 }

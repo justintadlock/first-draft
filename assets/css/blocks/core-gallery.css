@@ -1,0 +1,6 @@
+/* Fix for WP adding left/right padding to gallery images in constrained layouts. */
+.wp-block-gallery.alignfull .wp-block-image {
+	padding-left: 0;
+	padding-right: 0;
+}
+

@@ -1,0 +1,4 @@
+/* Lighten the marker color. */
+:where( :not( .has-text-color ) ) li::marker {
+	color: var( --wp--preset--color--neutral-400 );
+}

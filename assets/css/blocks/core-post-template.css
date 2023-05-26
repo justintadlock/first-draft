@@ -1,3 +1,9 @@
+/* Zero out potential spacing on list items. */
+:where( .wp-block-post-template > .wp-block-post ) {
+	margin: 0;
+	padding: 0;
+}
+
 /**
  * Adds a "no gap" block style to the Post Template block. This is necessary
  * until the block supports the `blockGap` design tool.

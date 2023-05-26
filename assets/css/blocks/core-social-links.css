@@ -16,13 +16,13 @@
 }
 
 .wp-block-social-links.has-small-icon-size .wp-block-social-link-label:not( .screen-reader-text ) {
-	font-size: var( --wp--preset--font-size--md );
+	font-size: var( --wp--preset--font-size--sm );
 }
 
 .wp-block-social-links.has-normal-icon-size .wp-block-social-link-label:not( .screen-reader-text ) {
-	font-size: var( --wp--preset--font-size--lg );
+	font-size: var( --wp--preset--font-size--md );
 }
 
 .wp-block-social-links:is( .has-large-icon-size, .has-huge-icon-size ) .wp-block-social-link-label:not( .screen-reader-text ) {
-	font-size: var( --wp--preset--font-size--xl );
+	font-size: var( --wp--preset--font-size--lg );
 }

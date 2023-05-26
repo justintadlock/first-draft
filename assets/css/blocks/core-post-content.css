@@ -7,3 +7,8 @@
 :where( .wp-block-post-content :where( li + li, li > ul, li > ol ) ) {
 	margin-block-start: var( --wp--preset--spacing--20 );
 }
+
+/* Give the text and marker some breathing room. */
+:where( .wp-block-post-content :where( ul, ol ):not( [class*=wp-block-] ) li ) {
+	padding-left: 0.25em;
+}

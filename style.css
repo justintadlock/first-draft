@@ -16,6 +16,13 @@
  */
 
 /* Defaults. */
+* {
+	/* Enables features from the registered fonts. */
+	font-feature-settings: "tnum", "ss01" 1;
+	font-variant-numeric: slashed-zero;
+
+}
+
 a:where( :not( :focus ) ),
 input:focus,
 textarea:focus,

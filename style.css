@@ -54,7 +54,7 @@ mark {
 
 s {
 	color: var( --wp--preset--color--neutral-400 );
-	text-decoration: line-through solid var( --wp--preset--color--primary-700 ) 0.0625em;
+	text-decoration-color: var( --wp--preset--color--primary-700 );
 }
 
 audio,

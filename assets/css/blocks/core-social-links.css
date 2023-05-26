@@ -24,5 +24,8 @@
 }
 
 .wp-block-social-links:is( .has-large-icon-size, .has-huge-icon-size ) .wp-block-social-link-label:not( .screen-reader-text ) {
-	font-size: var( --wp--preset--font-size--lg );
+	font-size: var( --wp--preset--font-size--xs );
+	font-weight: 500;
+	letter-spacing: 0.0625em;
+	text-transform: uppercase;
 }

@@ -33,7 +33,8 @@ function theme( string $component = '' )
 		$bindings = [
 			'assets'                 => new Assets(),
 			'block-style-variations' => new BlockStyleVariations(),
-			'block-patterns'         => new BlockPatterns()
+			'block-patterns'         => new BlockPatterns(),
+			'block-template-parts'   => new BlockTemplateParts()
 		];
 
 		// Boot each of the components.

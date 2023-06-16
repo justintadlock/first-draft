@@ -23,7 +23,7 @@ namespace FirstDraft;
  */
 function theme( string $component = '' )
 {
-        static $bindings = [];
+	static $bindings = [];
 
 	// If there are no bound components, register and boot them.
 	if ( [] === $bindings ) {

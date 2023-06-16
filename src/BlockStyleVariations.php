@@ -14,19 +14,19 @@ namespace FirstDraft;
 class BlockStyleVariations
 {
 	/**
-         * Boots the component, running its actions/filters.
-         *
-         * @since 1.0.0
-         */
+	 * Boots the component, running its actions/filters.
+	 *
+	 * @since 1.0.0
+	 */
 	public function boot(): void
 	{
 		add_action( 'init', [ $this, 'register'] );
 	}
 
 	/**
-         * Register block styles.
-         *
-         * @since 1.0.0
+	 * Register block styles.
+	 *
+	 * @since 1.0.0
 	 * @link  https://developer.wordpress.org/reference/functions/register_block_style/
 	 */
 	public function register(): void

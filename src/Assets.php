@@ -14,41 +14,41 @@ namespace FirstDraft;
 class Assets
 {
 	/**
-         * Boots the component, running its actions/filters.
-         *
-         * @since 1.0.0
-         */
+	 * Boots the component, running its actions/filters.
+	 *
+	 * @since 1.0.0
+	 */
 	public function boot(): void
 	{
 		// Editor styles.
 		add_action( 'after_setup_theme', [ $this, 'addEditorStyles' ] );
 
-                // Front-end only.
-                add_action( 'wp_enqueue_scripts', [ $this, 'enqueueAssets'] );
+		// Front-end only.
+		add_action( 'wp_enqueue_scripts', [ $this, 'enqueueAssets'] );
 
-                // Enqueue block-specific styles.
-                add_action( 'init', [ $this, 'enqueueBlockStyles' ] );
+		// Enqueue block-specific styles.
+		add_action( 'init', [ $this, 'enqueueBlockStyles' ] );
 	}
 
-        /**
+	/**
 	 * Add editor stylesheets.
 	 *
 	 * @since 1.0.0
 	 * @link  https://developer.wordpress.org/reference/functions/add_editor_style/
 	 */
-        public function addEditorStyles(): void
+	public function addEditorStyles(): void
 	{
 		add_editor_style( [
 			get_parent_theme_file_uri( 'style.css' )
 		] );
 	}
 
-        /**
+	/**
 	 * Enqueue scripts/styles for the front end.
 	 *
 	 * @since 1.0.0
 	 */
-        public function enqueueAssets(): void
+	public function enqueueAssets(): void
 	{
 		// Loads the primary `style.css` file.
 		wp_enqueue_style(
@@ -60,15 +60,15 @@ class Assets
 	}
 
 	/**
-         * Enqueues block-specific styles so that they only load when the block
-         * is in use. Block styles are stored under `/assets/css/blocks` are
+	 * Enqueues block-specific styles so that they only load when the block
+	 * is in use. Block styles are stored under `/assets/css/blocks` are
 	 * automatically enqueued. Each file should be named
 	 * `{$block_namespace}-{$block_slug}.css`.
-         *
-         * @since 1.0.0
+	 *
+	 * @since 1.0.0
 	 * @link  https://developer.wordpress.org/reference/functions/wp_enqueue_block_style/
-         */
-        public function enqueueBlockStyles(): void
+	 */
+	public function enqueueBlockStyles(): void
 	{
 		// Gets all the block stylesheets.
 		$files = glob( get_parent_theme_file_path( 'assets/css/blocks/*.css' ) );

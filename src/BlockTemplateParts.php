@@ -14,20 +14,20 @@ namespace FirstDraft;
 class BlockTemplateParts
 {
 	/**
-         * Boots the component, running its actions/filters.
-         *
-         * @since 1.0.0
-         */
+	 * Boots the component, running its actions/filters.
+	 *
+	 * @since 1.0.0
+	 */
 	public function boot(): void
 	{
 		add_action( 'default_wp_template_part_areas', [ $this, 'filterAreas'] );
 	}
 
 	/**
-         * Filter the core template part areas to add custom areas needed for
+	 * Filter the core template part areas to add custom areas needed for
 	 * the theme.
-         *
-         * @since 1.0.0
+	 *
+	 * @since 1.0.0
 	 * @link  https://developer.wordpress.org/reference/hooks/default_wp_template_part_areas/
 	 */
 	public function filterAreas( array $default_area_definitions ): array

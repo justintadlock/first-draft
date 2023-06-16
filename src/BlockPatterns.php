@@ -15,10 +15,10 @@ namespace FirstDraft;
 class BlockPatterns
 {
 	/**
-         * Boots the component, running its actions/filters.
-         *
-         * @since 1.0.0
-         */
+	 * Boots the component, running its actions/filters.
+	 *
+	 * @since 1.0.0
+	 */
 	public function boot(): void
 	{
 		// Patterns theme support.
@@ -39,13 +39,13 @@ class BlockPatterns
 	}
 
 	/**
-         * Register block pattern categories. Note that this theme registers
+	 * Register block pattern categories. Note that this theme registers
 	 * patterns by adding them as individual pattern files in the `/patterns`
 	 * folder.
-         *
-         * @since 1.0.0
+	 *
+	 * @since 1.0.0
 	 * @link  https://developer.wordpress.org/reference/functions/register_block_pattern_category/
-         */
+	 */
 	public function register(): void
 	{
 		// Registers a base `theme` category.

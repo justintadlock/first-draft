@@ -13,6 +13,8 @@ namespace FirstDraft;
 
 class Assets
 {
+	use HookAnnotation;
+
 	/**
          * Boots the component, running its actions/filters.
          *
@@ -20,19 +22,13 @@ class Assets
          */
 	public function boot(): void
 	{
-		// Editor styles.
-		add_action( 'after_setup_theme', [ $this, 'addEditorStyles' ] );
-
-                // Front-end only.
-                add_action( 'wp_enqueue_scripts', [ $this, 'enqueueAssets'] );
-
-                // Enqueue block-specific styles.
-                add_action( 'init', [ $this, 'enqueueBlockStyles' ] );
+		$this->hookMethods();
 	}
 
         /**
 	 * Add editor stylesheets.
 	 *
+	 * @hook after_setup_theme
 	 * @since 1.0.0
 	 * @link  https://developer.wordpress.org/reference/functions/add_editor_style/
 	 */
@@ -46,6 +42,7 @@ class Assets
         /**
 	 * Enqueue scripts/styles for the front end.
 	 *
+	 * @hook wp_enqueue_scripts
 	 * @since 1.0.0
 	 */
         public function enqueueAssets(): void
@@ -65,6 +62,7 @@ class Assets
 	 * automatically enqueued. Each file should be named
 	 * `{$block_namespace}-{$block_slug}.css`.
          *
+         * @hook init
          * @since 1.0.0
 	 * @link  https://developer.wordpress.org/reference/functions/wp_enqueue_block_style/
          */
